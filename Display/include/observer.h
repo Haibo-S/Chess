@@ -6,6 +6,6 @@ class Tile;
 class Observer {
   public:
     virtual ~Observer() = default;
-    virtual void notify(Tile &t) = 0;
+    virtual void notify(const Tile &t) = 0;
 };
 #endif

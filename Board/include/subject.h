@@ -14,4 +14,4 @@ class Subject {
     std::vector<Observer *> observers;
 };
 
-#endif // __SUBJECT_H__
+#endif 
