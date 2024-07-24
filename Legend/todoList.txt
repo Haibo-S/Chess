@@ -1,0 +1,16 @@
+Todo:
+main.cc: add command error checks
+Player: change the variable name turn (otherwise turn() calles error i dont know why)
+        implement setTeam, setTurn
+
+Done:
+Cell:
+- see the commit message earlier
+Board:
+- made textDisplay and graphicsDisplay objects instead of pointers
+- fixed grammar issues
+- refactored Board::init to support reinitialization the board
+- added output messages in isCheckmate(), isWon(), isStalemate(), isResign()
+- implemented isCheck, getWinner, getCheckedPlayer, setPiece
+Piece:
+- implemented getAllCheckMoves, getAllCaptureMoves in all its subclassess
