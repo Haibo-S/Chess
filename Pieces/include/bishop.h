@@ -1,16 +1,17 @@
-#ifndef __BISHOP_H__
-#define __BISHOP_H__
+#ifndef __PAWN_H__
+#define __PAWN_H__
 
 #include "piece.h"
 
 class Bishop : public Piece {
-  public:
-    Bishop(Team team, int row, int col) : Piece(team, row, col) {};
-    void move() override;
-    PieceType getPieceType() override;
-    std::vector<std::vector<int>> canMoveTo() override;
-    std::vector<std::vector<int>> canCapture() override;
-    std::vector<std::vector<int>> canCheck() override;
+  bool onPath(const std::vector<int>& pos);
+public:
+  Bishop(Team t, int row, int col, std::vector<Piece*>& pieces);
+  PieceType getPieceType() override;
+  std::vector<std::vector<int>> fetchAllMoves() override;
+  std::vector<std::vector<int>> fetchAllCaptureMoves() override;
+  bool checkAttackOnEnemyKing() override;
 };
 
 #endif
+

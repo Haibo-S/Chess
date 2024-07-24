@@ -4,13 +4,18 @@
 #include "piece.h"
 
 class King : public Piece {
-  public:
-    King(Team team, int row, int col) : Piece(team, row, col) {};
-    void move() override;
+    bool hasMoved = false;
+public:
+    King(Team t, int row, int col, std::vector<Piece*>& pieces);
     PieceType getPieceType() override;
-    std::vector<std::vector<int>> canMoveTo() override;
-    std::vector<std::vector<int>> canCapture() override;
-    std::vector<std::vector<int>> canCheck() override;
+    std::vector<std::vector<int>> fetchAllMoves() override;
+    std::vector<std::vector<int>> fetchAllCheckMoves() override;
+    std::vector<std::vector<int>> fetchAllCaptureMoves() override;
+    bool checkAttackOnEnemyKing() override;
+    bool isBeingChecked();
+
+    bool getHasMoved();
+    void setTrueForHasMoved();
 };
 
 #endif

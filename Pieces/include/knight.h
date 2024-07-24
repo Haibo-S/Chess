@@ -4,13 +4,12 @@
 #include "piece.h"
 
 class Knight : public Piece {
-  public:
-    Knight(Team team, int row, int col) : Piece(team, row, col) {};
-    void move() override;
+public:
+    Knight(Team t, int row, int col, std::vector<Piece*>& pieces);
     PieceType getPieceType() override;
-    std::vector<std::vector<int>> canMoveTo() override;
-    std::vector<std::vector<int>> canCapture() override;
-    std::vector<std::vector<int>> canCheck() override;
+    std::vector<std::vector<int>> fetchAllMoves() override;
+    std::vector<std::vector<int>> fetchAllCaptureMoves() override;
+    bool checkAttackOnEnemyKing() override;
 };
 
 #endif

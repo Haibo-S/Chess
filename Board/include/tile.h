@@ -3,9 +3,12 @@
 
 #include <vector>
 #include <iostream>
-#include "observer.h"
-#include "piece.h"
-#include "subject.h"
+
+#include "./../../Pieces/include/piece.h"
+#include "./../../Display/include/observer.h"
+#include "./subject.h"
+
+
 
 enum class Colour {B, W};
 
@@ -13,19 +16,21 @@ class Tile : public Subject{
 
     Piece *p;
     int row,col;
-    Colour colour; 
-    
+    Colour colour;    
 
     public:
         Tile(int row, int col): row{row}, col{col}, p{nullptr}, colour{Colour::W} {};
-        ~Tile();
+        ~Tile() {
+            if (p) delete p;
+        }
         void placePiece(Piece *p);
         void removePiece();
         Piece* getPiece();
-        int getRow();
+        PieceType getPieceType();
+        int getRow ();
         int getCol();
         Colour getColour();
-        void promote();
+        void promotion();
 };
 
 

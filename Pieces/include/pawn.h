@@ -3,14 +3,20 @@
 
 #include "piece.h"
 
+
 class Pawn : public Piece {
-  public:
-    Pawn(Team team, int row, int col) : Piece(team, row, col) {};
-    void move() override;
-    PieceType getPieceType() override;
-    std::vector<std::vector<int>> canMoveTo() override;
-    std::vector<std::vector<int>> canCapture() override;
-    std::vector<std::vector<int>> canCheck() override;
+  bool doubleMove = true;
+  bool allowEnPassant = false;
+public:
+  Pawn(Team t, int row, int col, std::vector<Piece*>& pieces);
+  PieceType getPieceType() override;
+  std::vector<std::vector<int>> fetchAllMoves() override;
+  std::vector<std::vector<int>> fetchAllCheckMoves() override;
+  std::vector<std::vector<int>> fetchAllCaptureMoves() override;
+  bool checkAttackOnEnemyKing() override;
+  void setDoubleMoveFalse();
+  void setEnPassant(bool b);
+  bool getEnPassant();
 };
 
 #endif
