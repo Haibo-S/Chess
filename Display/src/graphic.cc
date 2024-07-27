@@ -1,7 +1,7 @@
 #include "./../include/graphic.h"
 
 Graphic::Graphic(int windowSize)
-    : w{Xwindow(windowSize, windowSize)},
+    : w{windowSize, windowSize},
       windowSize{windowSize},
       blockSize{(gridNum == 0) ? 0 : (windowSize - 100) / (gridNum + 1)} {
     initializeGrid();

@@ -4,14 +4,20 @@
 #include "piece.h"
 
 class Rook : public Piece {
-    bool hasMoved = false;
-    bool onPath(const std::vector<int>& pos);
+    // bool hasMoved = false;
+    // bool onPath(const std::vector<int>& pos);
 public:
-    Rook(Team t, int row, int col, std::vector<Piece*>& pieces);
+    // Rook(Team t, int row, int col);
+    // Rook(Team t, int row, int col, std::vector<Piece*>& pieces);
+    Rook(Team t, int row, int col);
+
     PieceType getPieceType() override;
     std::vector<std::vector<int>> fetchAllMoves() override;
-    std::vector<std::vector<int>> fetchAllCaptureMoves() override;
-    bool checkAttackOnEnemyKing() override;
+    // std::vector<std::vector<int>> fetchAllCaptureMoves() override;
+    // bool checkAttackOnEnemyKing() override;
+    
+    // bool getHasMoved();
+    // void setTrueForHasMoved();
 };
 
 #endif

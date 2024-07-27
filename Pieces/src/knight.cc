@@ -1,8 +1,8 @@
 #include "./../include/knight.h"
 #include <algorithm>  
 
-Knight::Knight(Team t, int row, int col, std::vector<Piece*>& pieces)
-    : Piece(t, row, col, pieces) {}
+Knight::Knight(Team t, int row, int col)
+    : Piece(t, row, col) {}
 
 PieceType Knight::getPieceType() {
     return PieceType::KNIGHT;
@@ -30,25 +30,25 @@ std::vector<std::vector<int>> Knight::fetchAllMoves() {
     return allMoves;
 }
 
-std::vector<std::vector<int>> Knight::fetchAllCaptureMoves() {
-    std::vector<std::vector<int>> captureMoves;
-    std::vector<std::vector<int>> allMoves = fetchAllMoves();
+// std::vector<std::vector<int>> Knight::fetchAllCaptureMoves() {
+//     std::vector<std::vector<int>> captureMoves;
+//     std::vector<std::vector<int>> allMoves = fetchAllMoves();
 
-    for (const auto& move : allMoves) {
-        for (const auto& piece : pieces) {
-            if (piece->getPosition() == move && piece->getTeam() != getTeam()) {
-                captureMoves.push_back(move);
-            }
-        }
-    }
+//     for (const auto& move : allMoves) {
+//         for (const auto& piece : pieces) {
+//             if (piece->getPosition() == move && piece->getTeam() != getTeam()) {
+//                 captureMoves.push_back(move);
+//             }
+//         }
+//     }
 
-    return captureMoves;
-}
+//     return captureMoves;
+// }
 
-bool Knight::checkAttackOnEnemyKing() {
-    std::vector<int> kingPos = locateEnemyKing();
-    std::vector<std::vector<int>> allMoves = fetchAllMoves();
+// bool Knight::checkAttackOnEnemyKing() {
+//     std::vector<int> kingPos = locateEnemyKing();
+//     std::vector<std::vector<int>> allMoves = fetchAllMoves();
 
-    return std::find(allMoves.begin(), allMoves.end(), kingPos) != allMoves.end();
-}
+//     return std::find(allMoves.begin(), allMoves.end(), kingPos) != allMoves.end();
+// }
 

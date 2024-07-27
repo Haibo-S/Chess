@@ -5,7 +5,7 @@
 #include <vector>
 #include "observer.h"
 #include "./../../Board/include/tile.h"
-#include "./window.h"
+#include "./XWindow.h"
 
 class Graphic: public Observer {
     Xwindow w;

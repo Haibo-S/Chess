@@ -6,26 +6,39 @@
 #include "./../../Display/include/graphic.h"
 #include <vector>
 
+using namespace std;
+
 class Board {
   private:
     std::vector<std::vector<Tile>> board;
     Team turn; // white or black
-    Observer *display;
-    Text* td;
-    Graphic* gd;
+    Text td;
+    Graphic gd;
 
   public:
-    Board(Observer *display) : display{display} {};
-    ~Board();
+    Board(int windowSize) : td{}, gd{windowSize} {};
+    ~Board(){this->board.clear();};
 
-    void initialize();
-    Tile& getTile(int row, int col);
-    bool movePiece(int startRow, int startCol, int endRow, int endCol);
-    bool isCheck();
-    bool isCheckmate();
-    bool isStalemate();
-    void setDisplay(Observer *display);
-    void update(const Tile& tile);
+    void init();
+    void initDefault();
+    bool move(vector<int> from, vector<int> to);
+    // bool moveForComputer(vector<int> start, vector<int> end);
+    // bool isCheck();
+    // bool isCheckmate();
+    // bool isStalemate();
+    void toggleTurn();
+    // Colour getCheckedPlayer();
+    friend ostream &operator<<(ostream &out, const Board &b);
+    // void resign();
+    void setPiece(int row, int col, Piece *p);
+    void detachPiece(int row, int col);
+    void deletePiece(int row, int col);
+    Piece *getPiece(int row, int col);
+    vector<Piece*> getAllWhitePieces();
+    vector<Piece*> getAllBlackPieces();
+    vector<Piece*> getAllKingPieces();
+    vector<Piece*> getAllPieces();
+    // bool promote(int row, int col , char type);
 };
 
 #endif 

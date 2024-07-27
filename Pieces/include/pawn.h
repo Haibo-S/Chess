@@ -5,18 +5,20 @@
 
 
 class Pawn : public Piece {
-  bool doubleMove = true;
+  // bool doubleMove = true;
   bool allowEnPassant = false;
 public:
-  Pawn(Team t, int row, int col, std::vector<Piece*>& pieces);
+  Pawn(Team t, int row, int col);
+  // Pawn(Team t, int row, int col, std::vector<Piece*>& pieces);
   PieceType getPieceType() override;
   std::vector<std::vector<int>> fetchAllMoves() override;
-  std::vector<std::vector<int>> fetchAllCheckMoves() override;
-  std::vector<std::vector<int>> fetchAllCaptureMoves() override;
-  bool checkAttackOnEnemyKing() override;
-  void setDoubleMoveFalse();
+  // std::vector<std::vector<int>> fetchAllCheckMoves() override;
+  // std::vector<std::vector<int>> fetchAllCaptureMoves() override;
+  // bool checkAttackOnEnemyKing() override;
+  // void setDoubleMoveFalse();
   void setEnPassant(bool b);
   bool getEnPassant();
 };
 
 #endif
+

@@ -1,8 +1,11 @@
 #include "./../include/queen.h"
 #include <algorithm>  
 
-Queen::Queen(Team t, int row, int col, std::vector<Piece*>& pieces)
-    : Piece(t, row, col, pieces) {}
+// Queen::Queen(Team t, int row, int col, std::vector<Piece*>& pieces)
+    // : Piece(t, row, col, pieces) {}
+
+Queen::Queen(Team t, int row, int col)
+    : Piece(t, row, col) {}
 
 PieceType Queen::getPieceType() {
     return PieceType::QUEEN;
@@ -23,7 +26,7 @@ std::vector<std::vector<int>> Queen::fetchAllMoves() {
 
         while (x >= 0 && x < 8 && y >= 0 && y < 8) {
             allMoves.push_back({x, y});
-            if (onPath({x, y})) break;
+            // if (onPath({x, y})) break;
             x += dir.first;
             y += dir.second;
         }
@@ -32,33 +35,33 @@ std::vector<std::vector<int>> Queen::fetchAllMoves() {
     return allMoves;
 }
 
-std::vector<std::vector<int>> Queen::fetchAllCaptureMoves() {
-    std::vector<std::vector<int>> captureMoves;
-    std::vector<std::vector<int>> allMoves = fetchAllMoves();
+// std::vector<std::vector<int>> Queen::fetchAllCaptureMoves() {
+//     std::vector<std::vector<int>> captureMoves;
+//     std::vector<std::vector<int>> allMoves = fetchAllMoves();
 
-    for (const auto& move : allMoves) {
-        for (const auto& piece : pieces) {
-            if (piece->getPosition() == move && piece->getTeam() != getTeam()) {
-                captureMoves.push_back(move);
-            }
-        }
-    }
+//     for (const auto& move : allMoves) {
+//         for (const auto& piece : pieces) {
+//             if (piece->getPosition() == move && piece->getTeam() != getTeam()) {
+//                 captureMoves.push_back(move);
+//             }
+//         }
+//     }
 
-    return captureMoves;
-}
+//     return captureMoves;
+// }
 
-bool Queen::checkAttackOnEnemyKing() {
-    std::vector<int> kingPos = locateEnemyKing();
-    std::vector<std::vector<int>> allMoves = fetchAllMoves();
+// bool Queen::checkAttackOnEnemyKing() {
+//     std::vector<int> kingPos = locateEnemyKing();
+//     std::vector<std::vector<int>> allMoves = fetchAllMoves();
 
-    return std::find(allMoves.begin(), allMoves.end(), kingPos) != allMoves.end();
-}
+//     return std::find(allMoves.begin(), allMoves.end(), kingPos) != allMoves.end();
+// }
 
-bool Queen::onPath(const std::vector<int>& pos) {
-    for (const auto& piece : pieces) {
-        if (piece->getPosition() == pos) {
-            return true;
-        }
-    }
-    return false;
-}
+// bool Queen::onPath(const std::vector<int>& pos) {
+//     for (const auto& piece : pieces) {
+//         if (piece->getPosition() == pos) {
+//             return true;
+//         }
+//     }
+//     return false;
+// }

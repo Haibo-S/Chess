@@ -23,14 +23,19 @@ class Tile : public Subject{
         ~Tile() {
             if (p) delete p;
         }
-        void placePiece(Piece *p);
+        void placePiece(Piece *piece);
         void removePiece();
+
         Piece* getPiece();
         PieceType getPieceType();
-        int getRow ();
+
+        int getRow();
         int getCol();
+
         Colour getColour();
-        void promotion();
+        void setColour(Colour c);
+
+        void promotion(PieceType type);
 };
 
 
