@@ -30,14 +30,22 @@ void Graphic::initializeGrid() {
 
 
 void Graphic::notify(Tile &tile) {
-    int xaxis = 50 + (tile.getCol() + 1) * blockSize;
+    int xaxis = 50 + (tile.getCol()+1) * blockSize;
     int yaxis = 50 + (7 - tile.getRow()) * blockSize;
     char ch = drawChar(tile);
     if (ch == '_') { // black grid without a piece
         w.fillRectangle(xaxis, yaxis, blockSize, blockSize, Xwindow::Black);
-    } else {
-        w.fillRectangle(xaxis, yaxis, blockSize, blockSize, Xwindow::White);
-        w.drawString(xaxis + blockSize / 2, yaxis + blockSize / 2, std::string(1, ch));
+    }
+    else {
+        if(tile.getColour() == Colour::W){
+            w.fillRectangle(xaxis, yaxis, blockSize, blockSize, Xwindow::Black);
+            w.drawString(xaxis + blockSize/2, yaxis + blockSize/2, std::string(1,ch), Xwindow::White);
+        }else{
+            w.fillRectangle(xaxis, yaxis, blockSize, blockSize, Xwindow::White);
+            w.drawString(xaxis + blockSize/2, yaxis + blockSize/2, std::string(1,ch), Xwindow::Black);
+        }
+        // w.fillRectangle(xaxis, yaxis, blockSize, blockSize, Xwindow::White);
+        // w.drawString(xaxis + blockSize/2, yaxis + blockSize/2, std::string(1,ch));
     }
 }
 

@@ -27,11 +27,11 @@ void Board::init(){
         board.push_back(temp);
     }
     // notify all observers
-    for ( auto &row : board ) {
-        for ( auto &cell : row ) {
-            cell.notifyObservers(cell);
-        }
-    }
+    // for ( auto &row : board ) {
+    //     for ( auto &cell : row ) {
+    //         cell.notifyObservers(cell);
+    //     }
+    // }
 
 }
 

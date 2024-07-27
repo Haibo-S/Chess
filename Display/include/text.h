@@ -5,6 +5,7 @@
 #include <vector>
 #include "observer.h"
 #include "./../../Board/include/tile.h"
+#include "./../../Pieces/include/piece.h"
 
 #define boardSize = 8;
 
