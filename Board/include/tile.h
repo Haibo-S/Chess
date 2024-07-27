@@ -14,7 +14,7 @@ enum class Colour {B, W};
 
 class Tile : public Subject{
 
-    Piece *p;
+    Piece *p = nullptr;
     int row,col;
     Colour colour;    
 

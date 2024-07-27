@@ -1,5 +1,5 @@
-#ifndef __PAWN_H__
-#define __PAWN_H__
+#ifndef __BISHOP_H__
+#define __BISHOP_H__
 
 #include "piece.h"
 
