@@ -1,6 +1,7 @@
 #ifndef __BOARD_H__
 #define __BOARD_H__
 
+#include "subject.h"
 #include "./../../Board/include/tile.h"
 #include "./../../Display/include/text.h"
 #include "./../../Display/include/graphic.h"

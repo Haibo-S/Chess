@@ -1,13 +1,19 @@
-# Display/Makefile
+# Display Makefile
 
-SRC = src/graphic.cc src/observer.cc src/text.cc src/XWindow.cc
+# Source files
+SRC = src/graphic.cc src/text.cc src/XWindow.cc
+
+# Object files
 OBJ = $(SRC:.cc=.o)
+
+# Compiler and flags
+CXX = g++
 CXXFLAGS = -Iinclude
 
 all: $(OBJ)
 
 %.o: %.cc
-	g++ $(CXXFLAGS) -c $< -o $@
+	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 clean:
 	rm -f $(OBJ)
