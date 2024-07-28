@@ -36,7 +36,9 @@ void Graphic::notify(Tile &tile) {
     if (ch == '_') { // black grid without a piece
         w.fillRectangle(xaxis, yaxis, blockSize, blockSize, Xwindow::Black);
     }
-    else {
+    else if(ch == ' '){
+        w.fillRectangle(xaxis, yaxis, blockSize, blockSize, Xwindow::White);
+    }else{
         if(tile.getColour() == Colour::B){
             w.fillRectangle(xaxis, yaxis, blockSize, blockSize, Xwindow::White);
             w.drawString(xaxis + blockSize/2, yaxis + blockSize/2, std::string(1,ch), Xwindow::Black);
@@ -54,13 +56,13 @@ void Graphic::notify(Tile &tile) {
 char Graphic::drawChar(Tile& tile) {
     std::cout<<tile.getCol() << tile.getRow()<<std::endl;
     if(tile.getPiece()==nullptr){
-        return (tile.getCol() + tile.getRow()) % 2 == 0 ? '_' : ' ';
+        return (tile.getCol() + tile.getRow()) % 2 == 0 ? ' ' : '_';
     }
     PieceType pt = tile.getPieceType();
     
     switch (pt) {
         case PieceType::NONE:
-            return (tile.getCol() + tile.getRow()) % 2 == 0 ? '_' : ' ';
+            return (tile.getCol() + tile.getRow()) % 2 == 0 ? ' ' : '_';
         case PieceType::KNIGHT: {
             Piece* p = tile.getPiece();
             Team tc = p->getTeam();
