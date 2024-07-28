@@ -54,7 +54,6 @@ void Graphic::notify(Tile &tile) {
 
 
 char Graphic::drawChar(Tile& tile) {
-    std::cout<<tile.getCol() << tile.getRow()<<std::endl;
     if(tile.getPiece()==nullptr){
         return (tile.getCol() + tile.getRow()) % 2 == 0 ? ' ' : '_';
     }
