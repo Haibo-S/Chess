@@ -12,17 +12,17 @@
 #include "./Pieces/include/king.h"
 #include "./Pieces/include/pawn.h"
 #include "./Pieces/include/knight.h"
+#include "game.h"
 
 using namespace std;
 
 int main(){
-    Board b{500};
-    // Graphic b(500);
-    //Text t{};
-    b.init();
-    b.initDefault();
+    Game g{};
 
-    while(true){}
+    std::string line;
+    while(getline(std::cin, line)){
+        g.commandHandler(line);
+    }
     return 0;
 }
 
