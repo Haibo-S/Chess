@@ -43,38 +43,38 @@ void Board::initDefault(){
             Tile cell(i, j);
             if (i == 1 || i == 6) {
                 Pawn *pawn = new Pawn(Team::W, i, j);
-                pawn->setTeam((i%2) ? Team::W : Team::B);
+                pawn->setTeam((i==6) ? Team::W : Team::B);
                 board[i][j].placePiece(pawn);
                 // pieces.push_back(pawn);
             }
             if (i == 0 || i == 7) {
                 if (j == 0 || j == 7) {
                     Rook *rook = new Rook(Team::W, i, j);
-                    rook->setTeam((!(i == 0)) ? Team::B : Team::W);
+                    rook->setTeam(((i == 0)) ? Team::B : Team::W);
                     board[i][j].placePiece(rook);
                     // pieces.push_back(rook);
                 }
                 if (j == 1 || j == 6){
                      Knight *knight  = new Knight(Team::W, i, j);
-                     knight->setTeam((!(i == 0)) ? Team::B : Team::W);
+                     knight->setTeam(((i == 0)) ? Team::B : Team::W);
                      board[i][j].placePiece(knight);
                     //  pieces.push_back(knight);
                  }
                  if (j == 2 || j == 5){
                      Bishop *bishop = new Bishop(Team::W, i, j);
-                     bishop->setTeam((!(i == 0)) ? Team::B : Team::W);
+                     bishop->setTeam(((i == 0)) ? Team::B : Team::W);
                      board[i][j].placePiece(bishop);
                     //  pieces.push_back(bishop);
                  }
                 if (j == 3) {
                      Queen *queen = new Queen(Team::W, i, j);
-                     queen->setTeam((!(i == 0)) ? Team::B : Team::W);
+                     queen->setTeam(((i == 0)) ? Team::B : Team::W);
                      board[i][j].placePiece(queen);
                     // pieces.push_back(queen);
                  }
                 if (j == 4) {
                     King *king = new King(Team::W, i, j);
-                    king->setTeam((!(i == 0)) ? Team::B : Team::W);
+                    king->setTeam(((i == 0)) ? Team::B : Team::W);
                     board[i][j].placePiece(king);
                     // pieces.push_back(king);
                 }
@@ -94,6 +94,8 @@ Tile& Board::getTile(int r, int c){
 }
 bool Board::move(vector<int> from, vector<int> to){
     Piece *p = board[from[0]][from[1]].getPiece();
+    board[from[0]][from[1]].removePiece();
+    p->move(to[0],to[1]);
     board[to[0]][to[1]].placePiece(p);
     return true;
 }

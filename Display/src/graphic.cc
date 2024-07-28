@@ -31,13 +31,13 @@ void Graphic::initializeGrid() {
 
 void Graphic::notify(Tile &tile) {
     int xaxis = 50 + (tile.getCol()+1) * blockSize;
-    int yaxis = 50 + (7 - tile.getRow()) * blockSize;
+    int yaxis = 50 + (tile.getRow()) * blockSize;
     char ch = drawChar(tile);
     if (ch == '_') { // black grid without a piece
         w.fillRectangle(xaxis, yaxis, blockSize, blockSize, Xwindow::Black);
     }
     else {
-        if(tile.getColour() == Colour::W){
+        if(tile.getColour() == Colour::B){
             w.fillRectangle(xaxis, yaxis, blockSize, blockSize, Xwindow::White);
             w.drawString(xaxis + blockSize/2, yaxis + blockSize/2, std::string(1,ch), Xwindow::Black);
         }else{
@@ -52,7 +52,12 @@ void Graphic::notify(Tile &tile) {
 
 
 char Graphic::drawChar(Tile& tile) {
+    std::cout<<tile.getCol() << tile.getRow()<<std::endl;
+    if(tile.getPiece()==nullptr){
+        return (tile.getCol() + tile.getRow()) % 2 == 0 ? '_' : ' ';
+    }
     PieceType pt = tile.getPieceType();
+    
     switch (pt) {
         case PieceType::NONE:
             return (tile.getCol() + tile.getRow()) % 2 == 0 ? '_' : ' ';

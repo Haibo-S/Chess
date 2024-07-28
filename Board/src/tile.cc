@@ -1,15 +1,18 @@
 #include "../include/tile.h"
 
 void Tile::placePiece(Piece *piece){
-    this->removePiece();
+    if(getPiece() != nullptr) this->removePiece();
     p = piece;
     notifyObservers(*this);
 }
 
 void Tile::removePiece(){
-    Piece* oldP = p;
-    if(oldP) delete p;
-    p = nullptr;
+
+    if(p) {
+        p = nullptr;
+        notifyObservers(*this);
+    }
+
 }
 
 Piece* Tile::getPiece(){
@@ -17,6 +20,9 @@ Piece* Tile::getPiece(){
 }
 
 PieceType Tile::getPieceType(){
+    if(getPiece() == nullptr){
+        return PieceType::NONE;
+    }
     return this->p->getPieceType();
 }
 
