@@ -5,10 +5,6 @@
 
 using namespace std;
 
-Game::Game() : cur{Team::W}, board{500} {
-    board.init();
-    board.initDefault();
-}
 
 void Game::start() {
     std::string command;
