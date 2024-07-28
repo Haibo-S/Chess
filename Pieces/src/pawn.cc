@@ -16,7 +16,7 @@ std::vector<std::vector<int>> Pawn::fetchAllMoves() {
     std::vector<int> curPos = getPosition();
     std::vector<std::vector<int>> allMoves;
 
-    int direction = (getTeam() == Team::W) ? 1 : -1;
+    int direction = (getTeam() == Team::W) ? -1 : 1;
 
     if (curPos[0] + direction >= 0 && curPos[0] + direction < 8) {
         allMoves.push_back({curPos[0] + direction, curPos[1]});
