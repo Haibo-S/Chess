@@ -14,9 +14,9 @@ void Board::init(){
         for (int j = 0; j < 8; j++) { // each col
             Tile cell(i,j); // temp obj of this cell
             if ((i + j) % 2 == 0) {
-                cell.setColour(Colour::W);
-            } else {
                 cell.setColour(Colour::B);
+            } else {
+                cell.setColour(Colour::W);
             }
             // add observer to this cell
             cell.attach(&td);

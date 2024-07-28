@@ -38,11 +38,11 @@ void Graphic::notify(Tile &tile) {
     }
     else {
         if(tile.getColour() == Colour::W){
-            w.fillRectangle(xaxis, yaxis, blockSize, blockSize, Xwindow::Black);
-            w.drawString(xaxis + blockSize/2, yaxis + blockSize/2, std::string(1,ch), Xwindow::White);
-        }else{
             w.fillRectangle(xaxis, yaxis, blockSize, blockSize, Xwindow::White);
             w.drawString(xaxis + blockSize/2, yaxis + blockSize/2, std::string(1,ch), Xwindow::Black);
+        }else{
+            w.fillRectangle(xaxis, yaxis, blockSize, blockSize, Xwindow::Black);
+            w.drawString(xaxis + blockSize/2, yaxis + blockSize/2, std::string(1,ch), Xwindow::White);
         }
         // w.fillRectangle(xaxis, yaxis, blockSize, blockSize, Xwindow::White);
         // w.drawString(xaxis + blockSize/2, yaxis + blockSize/2, std::string(1,ch));

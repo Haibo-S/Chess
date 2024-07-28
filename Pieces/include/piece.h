@@ -1,5 +1,6 @@
 #ifndef __PIECE_H__
 #define __PIECE_H__
+#include <iostream>
 #include <vector>
 
 enum class PieceType { PAWN, KNIGHT, BISHOP, ROOK, QUEEN, KING, NONE };

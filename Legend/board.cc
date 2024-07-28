@@ -63,31 +63,31 @@ void Board::initDefault() {
             if (i == 0 || i == 7) {
                 if (j == 0 || j == 7) {
                     Rook *rook = new Rook(TeamColor::White, i, j, vector<Piece *>());
-                    rook->setTeam((!(i == 0)) ? TeamColor::Black : TeamColor::White);
+                    rook->setTeam(((i == 0)) ? TeamColor::Black : TeamColor::White);
                     theBoard[i][j].setPiece(rook);
                     pieces.push_back(rook);
                 }
                 if (j == 1 || j == 6){
                      Knight *knight  = new Knight(TeamColor::White, i, j, vector<Piece *>());
-                     knight->setTeam((!(i == 0)) ? TeamColor::Black : TeamColor::White);
+                     knight->setTeam(((i == 0)) ? TeamColor::Black : TeamColor::White);
                      theBoard[i][j].setPiece(knight);
                      pieces.push_back(knight);
                  }
                  if (j == 2 || j == 5){
                      Bishop *bishop = new Bishop(TeamColor::White, i, j, vector<Piece *>());
-                     bishop->setTeam((!(i == 0)) ? TeamColor::Black : TeamColor::White);
+                     bishop->setTeam(((i == 0)) ? TeamColor::Black : TeamColor::White);
                      theBoard[i][j].setPiece(bishop);
                      pieces.push_back(bishop);
                  }
                 if (j == 3) {
                      Queen *queen = new Queen(TeamColor::White, i, j, vector<Piece *>());
-                     queen->setTeam((!(i == 0)) ? TeamColor::Black : TeamColor::White);
+                     queen->setTeam(((i == 0)) ? TeamColor::Black : TeamColor::White);
                      theBoard[i][j].setPiece(queen);
                     pieces.push_back(queen);
                  }
                 if (j == 4) {
                     King *king = new King(TeamColor::White, i, j, vector<Piece *>());
-                    king->setTeam((!(i == 0)) ? TeamColor::Black : TeamColor::White);
+                    king->setTeam(((i == 0)) ? TeamColor::Black : TeamColor::White);
                     theBoard[i][j].setPiece(king);
                     pieces.push_back(king);
                 }
