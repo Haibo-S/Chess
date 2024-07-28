@@ -87,6 +87,11 @@ void Board::initDefault(){
     // }
 }
 
+
+Tile& Board::getTile(int r, int c){
+    return board[r][c];
+
+}
 bool Board::move(vector<int> from, vector<int> to){
     Piece *p = board[from[0]][from[1]].getPiece();
     board[to[0]][to[1]].placePiece(p);

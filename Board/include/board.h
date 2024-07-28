@@ -26,7 +26,7 @@ class Board {
   public:
     Board(int windowSize) : td{}, gd{windowSize} {};
     ~Board(){this->board.clear();};
-
+    Tile& getTile(int r, int c);
     void init();
     void initDefault();
     bool move(vector<int> from, vector<int> to);

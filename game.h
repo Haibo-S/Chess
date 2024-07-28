@@ -3,7 +3,8 @@
 
 #include "Board/include/board.h"
 #include "Pieces/include/piece.h"
-#include "Display/include/display.h"
+#include "Display/include/text.h"
+#include "Display/include/graphic.h"
 #include <iostream>
 #include <string>
 
@@ -14,14 +15,16 @@ class Game {
 
     void switchTurn();
     bool isValidMove(int r1, int c1, int r2, int c2);
-    bool isCheck(Team& team);
-    bool isCheckmate(Team& team);
-    bool isStalemate(Team &team);
+    bool isCheck();
+    bool isCheckmate();
+    bool isStalemate();
     void moveCommand(const std::string &command);
-
+    bool checkCheck(int r1, int c1, int r2, int c2);
+    bool isPathObstructed(int r1, int c1, int r2, int c2);
+    
     public:
 
-        Game() : cur{Team::W}, board{new Text()} {};
+        Game() : cur{Team::W}, board{500} {};
         void start();
         void commandHandler(const std::string &command);
 };
