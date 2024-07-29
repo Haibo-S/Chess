@@ -87,6 +87,39 @@ void Board::initDefault(){
     // }
 }
 
+void Board::placeBoardPiece(int r, int c, char p, bool team){
+    // team: true if white; false is black
+    if(p == 'P'){
+        Pawn *pawn = new Pawn(Team::W, r, c);
+        pawn->setTeam(team ? Team::W : Team::B);
+        board[r][c].placePiece(pawn);
+    }else if(p == 'Q'){
+        Queen *queen = new Queen(Team::W, r, c);
+        queen->setTeam(team ? Team::W : Team::B);
+        board[r][c].placePiece(queen);
+
+    }else if(p == 'B'){
+        Bishop *bishop = new Bishop(Team::W, r, c);
+        bishop->setTeam(team ? Team::W : Team::B);
+        board[r][c].placePiece(bishop);
+
+    }else if(p == 'N'){
+        Knight *knight = new Knight(Team::W, r, c);
+        knight->setTeam(team ? Team::W : Team::B);
+        board[r][c].placePiece(knight);
+
+    }else if(p == 'R'){
+        Rook *rook = new Rook(Team::W, r, c);
+        rook->setTeam(team ? Team::W : Team::B);
+        board[r][c].placePiece(rook);
+
+    }else if(p == 'K'){
+        King *king = new King(Team::W, r, c);
+        king->setTeam(team ? Team::W : Team::B);
+        board[r][c].placePiece(king);
+    }
+}
+
 
 Tile& Board::getTile(int r, int c){
     return board[r][c];

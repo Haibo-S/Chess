@@ -44,31 +44,44 @@ void Game::moveCommand(const std::string &command) {
         tokens.push_back(token);
     }
 
-    if (tokens.size() != 3) {
+    if (tokens.size() != 3 && tokens.size() != 4) {
         std::cout << "Invalid command format. Use: move <start> <end>" << std::endl;
         return;
-    }
+    } else if(tokens.size() == 4){
+        // Promotion Move
 
-    int r1 = 7 - (tokens[1][1] - '1');
-    int c1 = tokens[1][0] - 'a';
-    int r2 = 7 - (tokens[2][1] - '1');
-    int c2 = tokens[2][0] - 'a';
-
-    // std::cout << "r1 is: " << r1 << std::endl;
-    // std::cout << "c1 is: " << c1 << std::endl;
-    // std::cout << "r2 is: " << r2 << std::endl;
-    // std::cout << "c2 is: " << c2 << std::endl;
-
-    if(board.getTile(r1,c1).getPiece() == nullptr){
-        std::cout << "Space is empty, please call move on a tile with a piece."<<std::endl;
-        return;
-    }
-    if (isValidMove(r1, c1, r2, c2)) {
-        board.move({r1, c1}, {r2, c2});
-        if(isEnpassantMove){
-            board.removePiece({r1, c2});
-            isEnpassantMove = false;
+       if (tokens[0] != "move" || 
+        (tokens[1][0] < 'a' || tokens[1][0] > 'h') ||
+        (tokens[2][0] < 'a' || tokens[2][0] > 'h') ||
+        (tokens[1][1] != '2' && tokens[1][1] != '7') ||
+        (tokens[2][1] != '1' && tokens[2][1] != '8') ||
+        !(tokens[3][0] == 'Q' || tokens[3][0] == 'B' || tokens[3][0] == 'R' || tokens[3][0] == 'N')) {
+            std::cout << "Invalid command format. Make sure columns are a-h and rows are 1-8. Promotion can only be Q, B, N, R" << std::endl;
+            return;
         }
+        int r1 = 7 - (tokens[1][1] - '1');
+        int c1 = tokens[1][0] - 'a';
+        int r2 = 7 - (tokens[2][1] - '1');
+        int c2 = tokens[2][0] - 'a';
+        int promo = tokens[3][0];
+
+        if(board.getTile(r1,c1).getPiece() == nullptr || board.getTile(r1,c1).getPieceType() != PieceType::PAWN){
+            std::cout << "Invalid Move. Promotion must be a pawn"<<std::endl;
+            return;
+        }
+
+        Team team = board.getTile(r1,c1).getPiece()->getTeam();
+
+        if (isValidMove(r1, c1, r2, c2)) {
+            board.move({r1, c1}, {r2, c2});
+            board.removePiece({r2, c2});
+            board.placeBoardPiece(r2, c2, promo, team == Team::W ? true : false);
+        }else {
+            std::cout << "Invalid move. Try again." << std::endl;
+            return;
+        }
+
+        // Just like before
         if (isCheckmate()) {
             std::cout << "Checkmate! " << (cur == Team::W ? "White" : "Black") << " wins!" << std::endl;
             exit(0);
@@ -81,9 +94,52 @@ void Game::moveCommand(const std::string &command) {
 
         prevMove = {{r1, c1}, {r2, c2}};
         switchTurn();
-    } else {
-        std::cout << "Invalid move. Try again." << std::endl;
+
+    }else{
+        // Non Promotion Move
+        // Invalid Input
+        if(tokens[0] != "move" || (tokens[1][0] < 'a' || tokens[1][0] > 'h') \
+        || (tokens[2][0] < 'a' || tokens[2][0] > 'h') \
+        || (tokens[1][1] < '1' || tokens[1][1] > '8') \
+        || (tokens[2][1] < '1' || tokens[2][1] > '8') ){
+            std::cout << "Invalid command format. Make Sure col are a-h and row are 1-8" << std::endl;
+            return;
+        }
+
+        int r1 = 7 - (tokens[1][1] - '1');
+        int c1 = tokens[1][0] - 'a';
+        int r2 = 7 - (tokens[2][1] - '1');
+        int c2 = tokens[2][0] - 'a';
+
+        if(board.getTile(r1,c1).getPiece() == nullptr){
+            std::cout << "Space is empty, please call move on a tile with a piece."<<std::endl;
+            return;
+        }
+        if (isValidMove(r1, c1, r2, c2)) {
+            board.move({r1, c1}, {r2, c2});
+            if(isEnpassantMove){
+                board.removePiece({r1, c2});
+                isEnpassantMove = false;
+            }
+            if (isCheckmate()) {
+                std::cout << "Checkmate! " << (cur == Team::W ? "White" : "Black") << " wins!" << std::endl;
+                exit(0);
+            } else if (isStalemate()) {
+                std::cout << "Stalemate! It's a draw!" << std::endl;
+                exit(0);
+            } else if (isCheck()) {
+                std::cout << (cur == Team::W ? "White" : "Black") << " is in check!" << std::endl;
+            }
+
+            prevMove = {{r1, c1}, {r2, c2}};
+            switchTurn();
+        } else {
+            std::cout << "Invalid move. Try again." << std::endl;
+        }
+
     }
+
+    
 }
 
 void Game::switchTurn() {

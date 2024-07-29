@@ -39,6 +39,7 @@ class Board {
     friend ostream &operator<<(ostream &out, const Board &b);
     // void resign();
     bool removePiece(vector<int> coord);
+    void placeBoardPiece(int r, int c, char p, bool team);
     // void setPiece(int row, int col, Piece *p);
     // void detachPiece(int row, int col);
     // void deletePiece(int row, int col);
