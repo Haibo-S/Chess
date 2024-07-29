@@ -5,6 +5,7 @@
 
 using namespace std;
 
+bool isEnpassantMove = false;
 
 void Game::start() {
     std::string command;
@@ -43,38 +44,44 @@ void Game::moveCommand(const std::string &command) {
         tokens.push_back(token);
     }
 
-    if (tokens.size() != 3) {
+    if (tokens.size() != 3 && tokens.size() != 4) {
         std::cout << "Invalid command format. Use: move <start> <end>" << std::endl;
         return;
-    }
+    } else if(tokens.size() == 4){
+        // Promotion Move
 
-    int r1 = 7 - (tokens[1][1] - '1');
-    int c1 = tokens[1][0] - 'a';
-    int r2 = 7 - (tokens[2][1] - '1');
-    int c2 = tokens[2][0] - 'a';
+       if (tokens[0] != "move" || 
+        (tokens[1][0] < 'a' || tokens[1][0] > 'h') ||
+        (tokens[2][0] < 'a' || tokens[2][0] > 'h') ||
+        (tokens[1][1] != '2' && tokens[1][1] != '7') ||
+        (tokens[2][1] != '1' && tokens[2][1] != '8') ||
+        !(tokens[3][0] == 'Q' || tokens[3][0] == 'B' || tokens[3][0] == 'R' || tokens[3][0] == 'N')) {
+            std::cout << "Invalid command format. Make sure columns are a-h and rows are 1-8. Promotion can only be Q, B, N, R" << std::endl;
+            return;
+        }
+        int r1 = 7 - (tokens[1][1] - '1');
+        int c1 = tokens[1][0] - 'a';
+        int r2 = 7 - (tokens[2][1] - '1');
+        int c2 = tokens[2][0] - 'a';
+        int promo = tokens[3][0];
 
-    // std::cout << "r1 is: " << r1 << std::endl;
-    // std::cout << "c1 is: " << c1 << std::endl;
-    // std::cout << "r2 is: " << r2 << std::endl;
-    // std::cout << "c2 is: " << c2 << std::endl;
+        if(board.getTile(r1,c1).getPiece() == nullptr || board.getTile(r1,c1).getPieceType() != PieceType::PAWN){
+            std::cout << "Invalid Move. Promotion must be a pawn"<<std::endl;
+            return;
+        }
 
-    if(board.getTile(r1,c1).getPiece() == nullptr){
-        std::cout << "Space is empty, please call move on a tile with a piece."<<std::endl;
-        return;
-    }
-    if (isValidMove(r1, c1, r2, c2)) {
-        board.move({r1, c1}, {r2, c2});
+        Team team = board.getTile(r1,c1).getPiece()->getTeam();
 
+        if (isValidMove(r1, c1, r2, c2)) {
+            board.move({r1, c1}, {r2, c2});
+            board.removePiece({r2, c2});
+            board.placeBoardPiece(r2, c2, promo, team == Team::W ? true : false);
+        }else {
+            std::cout << "Invalid move. Try again." << std::endl;
+            return;
+        }
 
-             Tile& startTile = board.getTile(r2, c2);
-
-     Piece* piece = startTile.getPiece();
-
-             std::vector<std::vector<int>> validMoves = piece->fetchAllMoves();
-
-      for(auto& move: validMoves){
-          cout << "possible moves "<<move[0] << " " << move[1] << endl;
-      }
+        // Just like before
         if (isCheckmate()) {
             std::cout << "Checkmate! " << (cur == Team::W ? "White" : "Black") << " wins!" << std::endl;
             exit(0);
@@ -84,10 +91,56 @@ void Game::moveCommand(const std::string &command) {
         } else if (isCheck()) {
             std::cout << (cur == Team::W ? "White" : "Black") << " is in check!" << std::endl;
         }
+
+        prevMove = {{r1, c1}, {r2, c2}};
         switchTurn();
-    } else {
-        std::cout << "Invalid move. Try again." << std::endl;
+
     }
+    else{
+        // Non Promotion Move
+        // Invalid Input
+        if(tokens[0] != "move" || (tokens[1][0] < 'a' || tokens[1][0] > 'h') \
+        || (tokens[2][0] < 'a' || tokens[2][0] > 'h') \
+        || (tokens[1][1] < '1' || tokens[1][1] > '8') \
+        || (tokens[2][1] < '1' || tokens[2][1] > '8') ){
+            std::cout << "Invalid command format. Make Sure col are a-h and row are 1-8" << std::endl;
+            return;
+        }
+
+        int r1 = 7 - (tokens[1][1] - '1');
+        int c1 = tokens[1][0] - 'a';
+        int r2 = 7 - (tokens[2][1] - '1');
+        int c2 = tokens[2][0] - 'a';
+
+        if(board.getTile(r1,c1).getPiece() == nullptr){
+            std::cout << "Space is empty, please call move on a tile with a piece."<<std::endl;
+            return;
+        }
+        if (isValidMove(r1, c1, r2, c2)) {
+            board.move({r1, c1}, {r2, c2});
+            if(isEnpassantMove){
+                board.removePiece({r1, c2});
+                isEnpassantMove = false;
+            }
+            if (isCheckmate()) {
+                std::cout << "Checkmate! " << (cur == Team::W ? "White" : "Black") << " wins!" << std::endl;
+                exit(0);
+            } else if (isStalemate()) {
+                std::cout << "Stalemate! It's a draw!" << std::endl;
+                exit(0);
+            } else if (isCheck()) {
+                std::cout << (cur == Team::W ? "White" : "Black") << " is in check!" << std::endl;
+            }
+
+            prevMove = {{r1, c1}, {r2, c2}};
+            switchTurn();
+        } else {
+            std::cout << "Invalid move. Try again." << std::endl;
+        }
+
+    }
+
+    
 }
 
 void Game::switchTurn() {
@@ -99,55 +152,153 @@ bool Game::isValidMove(int r1, int c1, int r2, int c2) {
     Tile& endTile = board.getTile(r2, c2);
     Piece* piece = startTile.getPiece();
 
-     if (!piece || piece->getTeam() != cur) {
-         return false;
-     }
+    // std::cout << printTeam(piece->getTeam()) << " " << printTeam(cur) << std::endl;
 
-     std::vector<std::vector<int>> validMoves = piece->fetchAllMoves();
-    //  for(auto& move: validMoves){
-    //      cout << "possible moves "<<move[0] << " " << move[1] << endl;
-    //  }
+    if (!piece || piece->getTeam() != cur) {
+        return false;
+    }
 
+    std::vector<std::vector<int>> validMoves = piece->fetchAllMoves();
 
-    for (const auto& move : validMoves) {
+    // for(auto& move: validMoves){
+    //     cout << move[0] << " " << move[1] << endl;
+    // }
+
+    // cout << "reached here" << endl;
+
+    for (auto& move : validMoves) {
         if (move[0] == r2 && move[1] == c2) {
 
             if (piece->getPieceType() == PieceType::PAWN) {
+                Pawn* pawn = dynamic_cast<Pawn*>(piece);
+
                 //check that nothing is blocking the path
                 if (c1 == c2) {
                     if (endTile.getPiece() != nullptr) {
                         return false;
                     }
+                    if (pawn->getHasMoved() == true && (r2 - r1 >= 2)){
+                        return false;
+                    }
                 } 
                 else {
                     // check there is a piece to take with diagonal move
-                    if (endTile.getPiece() == nullptr || endTile.getPiece()->getTeam() == cur) {
+
+                    if ((endTile.getPiece() == nullptr && pawn->getEnPassant() == false)
+                    || (endTile.getPiece() != nullptr && endTile.getPiece()->getTeam() == cur)) {
                         return false;
                     }
+
+                    // enPassant
+                    if(pawn->getEnPassant()){
+                        // cout << "Reached Here" << endl;
+                        if(c1 == 0){
+                            if( cur == Team::W \
+                            && r2 == r1 - 1 && c2 == c1 + 1 && endTile.getPiece() == nullptr \
+                            && board.getTile(r1, c2).getPieceType() == PieceType::PAWN  &&  board.getTile(r1, c2).getPiece()->getTeam() != cur \
+                            && prevMove[0][0] == r1 - 2 && prevMove[0][1] == c2 && prevMove[1][0] == r1 && prevMove[1][1] == c2){
+                                pawn->setEnPassant(false);
+                                isEnpassantMove = true;
+                                return true;
+                            }else if( cur == Team::B \
+                            && r2 == r1 + 1 && c2 == c1 + 1 && endTile.getPiece() == nullptr \
+                            && board.getTile(r1, c2).getPieceType() == PieceType::PAWN  &&  board.getTile(r1, c2).getPiece()->getTeam() != cur \
+                            && prevMove[0][0] == r1 + 2 && prevMove[0][1] == c2 && prevMove[1][0] == r1 && prevMove[1][1] == c2){
+                                pawn->setEnPassant(false);
+                                isEnpassantMove = true;
+                                return true;
+                            }else{
+                                isEnpassantMove = false;
+                                return false;
+                            }
+                        }else if(c1 == 7){
+                            if( cur == Team::W \
+                            && r2 == r1 - 1 && c2 == c1 - 1 && endTile.getPiece() == nullptr \
+                            && board.getTile(r1, c2).getPieceType() == PieceType::PAWN  &&  board.getTile(r1, c2).getPiece()->getTeam() != cur \
+                            && prevMove[0][0] == r1 - 2 && prevMove[0][1] == c2 && prevMove[1][0] == r1 && prevMove[1][1] == c2){
+                                pawn->setEnPassant(false);
+                                isEnpassantMove = true;
+                                return true;
+                            }else if( cur == Team::B \
+                            && r2 == r1 + 1 && c2 == c1 - 1 && endTile.getPiece() == nullptr \
+                            && board.getTile(r1, c2).getPieceType() == PieceType::PAWN  &&  board.getTile(r1, c2).getPiece()->getTeam() != cur \
+                            && prevMove[0][0] == r1 + 2 && prevMove[0][1] == c2 && prevMove[1][0] == r1 && prevMove[1][1] == c2){
+                                pawn->setEnPassant(false);
+                                isEnpassantMove = true;
+                                return true;
+                            }else{
+                                isEnpassantMove = false;
+                                return false;
+                            }
+                        }else{
+                            if( cur == Team::W \
+                            && r2 == r1 - 1 && c2 == c1 + 1 && endTile.getPiece() == nullptr \
+                            && board.getTile(r1, c2).getPieceType() == PieceType::PAWN  &&  board.getTile(r1, c2).getPiece()->getTeam() != cur \
+                            && prevMove[0][0] == r1 - 2 && prevMove[0][1] == c2 && prevMove[1][0] == r1 && prevMove[1][1] == c2){
+                                pawn->setEnPassant(false);
+                                isEnpassantMove = true;
+                                return true;
+                            }else if( cur == Team::B \
+                            && r2 == r1 + 1 && c2 == c1 + 1 && endTile.getPiece() == nullptr \
+                            && board.getTile(r1, c2).getPieceType() == PieceType::PAWN  &&  board.getTile(r1, c2).getPiece()->getTeam() != cur \
+                            && prevMove[0][0] == r1 + 2 && prevMove[0][1] == c2 && prevMove[1][0] == r1 && prevMove[1][1] == c2){
+                                pawn->setEnPassant(false);
+                                isEnpassantMove = true;
+                                return true;
+                            }else if( cur == Team::W \
+                            && r2 == r1 - 1 && c2 == c1 - 1 && endTile.getPiece() == nullptr \
+                            && board.getTile(r1, c2).getPieceType() == PieceType::PAWN  &&  board.getTile(r1, c2).getPiece()->getTeam() != cur \
+                            && prevMove[0][0] == r1 - 2 && prevMove[0][1] == c2 && prevMove[1][0] == r1 && prevMove[1][1] == c2){
+                                pawn->setEnPassant(false);
+                                isEnpassantMove = true;
+                                return true;
+                            }else if( cur == Team::B \
+                            && r2 == r1 + 1 && c2 == c1 - 1 && endTile.getPiece() == nullptr \
+                            && board.getTile(r1, c2).getPieceType() == PieceType::PAWN  &&  board.getTile(r1, c2).getPiece()->getTeam() != cur \
+                            && prevMove[0][0] == r1 + 2 && prevMove[0][1] == c2 && prevMove[1][0] == r1 && prevMove[1][1] == c2){
+                                pawn->setEnPassant(false);
+                                isEnpassantMove = true;
+                                return true;
+                            }else{
+                                isEnpassantMove = false;
+                                return false;
+                            }
+                            
+                        }
+                    }
+
+
                 }
+
+                if(!dynamic_cast<Pawn*>(piece)->getEnPassant() &&  piece->getTeam() == Team::W && r2 == 3){
+                    // std::cout << "Setting EnPassant!" << std::endl;
+                    dynamic_cast<Pawn*>(piece)->setEnPassant(true);
+                }else if(!dynamic_cast<Pawn*>(piece)->getEnPassant() && piece->getTeam() == Team::B && r2 == 4){
+                    // std::cout << "Setting EnPassant!" << std::endl;
+                    dynamic_cast<Pawn*>(piece)->setEnPassant(true);
+                }else{
+                    dynamic_cast<Pawn*>(piece)->setEnPassant(false);
+                }
+
+                
             }
-            if (piece->getPieceType() == PieceType::PAWN || piece->getPieceType() == PieceType::ROOK || piece->getPieceType() == PieceType::BISHOP || piece->getPieceType() == PieceType::QUEEN) {
-                if (isPathObstructed(r1, c1, r2, c2)) {
-                    return false;
-                }
-            } 
 
             // check the king wont move into check
-            // board.move({r1, c1}, {r2, c2});
-            // if (isCheck()) {
-            //     board.move({r2, c2}, {r1, c1});
-            //     std::cout<<"in check"<<std::endl;
+            // if (piece->getPieceType() == PieceType::KING) {
             //     if (checkCheck(r1, c1, r2, c2)) {
             //         return false;
             //     }
             // }
-            
-             //   board.move({r2, c2}, {r1, c1});
-            
+
+            piece->setHasMovedToTrue();
             return true;
         }
 
-       
+        if (piece->getPieceType() == PieceType::PAWN || piece->getPieceType() == PieceType::ROOK || piece->getPieceType() == PieceType::BISHOP || piece->getPieceType() == PieceType::QUEEN) {
+            if (isPathObstructed(r1, c1, r2, c2)) {
+                return false;
+            }
+        }        
     }
 
     return false;
