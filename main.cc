@@ -20,9 +20,7 @@ int main(){
     Game g{};
 
     std::string line;
-    while(getline(std::cin, line)){
-        g.commandHandler(line);
-    }
+    g.start();
     return 0;
 }
 

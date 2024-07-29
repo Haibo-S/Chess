@@ -53,10 +53,10 @@ void Game::moveCommand(const std::string &command) {
     int r2 = 7 - (tokens[2][1] - '1');
     int c2 = tokens[2][0] - 'a';
 
-    std::cout << "r1 is: " << r1 << std::endl;
-    std::cout << "c1 is: " << c1 << std::endl;
-    std::cout << "r2 is: " << r2 << std::endl;
-    std::cout << "c2 is: " << c2 << std::endl;
+    // std::cout << "r1 is: " << r1 << std::endl;
+    // std::cout << "c1 is: " << c1 << std::endl;
+    // std::cout << "r2 is: " << r2 << std::endl;
+    // std::cout << "c2 is: " << c2 << std::endl;
 
     if(board.getTile(r1,c1).getPiece() == nullptr){
         std::cout << "Space is empty, please call move on a tile with a piece."<<std::endl;
@@ -64,6 +64,17 @@ void Game::moveCommand(const std::string &command) {
     }
     if (isValidMove(r1, c1, r2, c2)) {
         board.move({r1, c1}, {r2, c2});
+
+
+             Tile& startTile = board.getTile(r2, c2);
+
+     Piece* piece = startTile.getPiece();
+
+             std::vector<std::vector<int>> validMoves = piece->fetchAllMoves();
+
+      for(auto& move: validMoves){
+          cout << "possible moves "<<move[0] << " " << move[1] << endl;
+      }
         if (isCheckmate()) {
             std::cout << "Checkmate! " << (cur == Team::W ? "White" : "Black") << " wins!" << std::endl;
             exit(0);
@@ -88,19 +99,15 @@ bool Game::isValidMove(int r1, int c1, int r2, int c2) {
     Tile& endTile = board.getTile(r2, c2);
     Piece* piece = startTile.getPiece();
 
-    std::cout << printTeam(piece->getTeam()) << " " << printTeam(cur) << std::endl;
+     if (!piece || piece->getTeam() != cur) {
+         return false;
+     }
 
-    if (!piece || piece->getTeam() != cur) {
-        return false;
-    }
+     std::vector<std::vector<int>> validMoves = piece->fetchAllMoves();
+    //  for(auto& move: validMoves){
+    //      cout << "possible moves "<<move[0] << " " << move[1] << endl;
+    //  }
 
-    std::vector<std::vector<int>> validMoves = piece->fetchAllMoves();
-
-    for(auto& move: validMoves){
-        cout << move[0] << " " << move[1] << endl;
-    }
-
-    cout << "reached here" << endl;
 
     for (const auto& move : validMoves) {
         if (move[0] == r2 && move[1] == c2) {
@@ -119,21 +126,28 @@ bool Game::isValidMove(int r1, int c1, int r2, int c2) {
                     }
                 }
             }
-
-            // check the king wont move into check
-            if (piece->getPieceType() == PieceType::KING) {
-                if (checkCheck(r1, c1, r2, c2)) {
-                    return false;
-                }
-            }
-            return true;
-        }
-
             if (piece->getPieceType() == PieceType::PAWN || piece->getPieceType() == PieceType::ROOK || piece->getPieceType() == PieceType::BISHOP || piece->getPieceType() == PieceType::QUEEN) {
                 if (isPathObstructed(r1, c1, r2, c2)) {
                     return false;
                 }
-            }        
+            } 
+
+            // check the king wont move into check
+            // board.move({r1, c1}, {r2, c2});
+            // if (isCheck()) {
+            //     board.move({r2, c2}, {r1, c1});
+            //     std::cout<<"in check"<<std::endl;
+            //     if (checkCheck(r1, c1, r2, c2)) {
+            //         return false;
+            //     }
+            // }
+            
+             //   board.move({r2, c2}, {r1, c1});
+            
+            return true;
+        }
+
+       
     }
 
     return false;
@@ -149,7 +163,7 @@ bool Game::isCheck() {
         for(int j=0; j<8; j++){
             Piece* temp = board.getTile(i,j).getPiece();
 
-            if(temp != nullptr && temp->getPieceType() == PieceType::KING && temp->getTeam() == cur){
+            if(temp != nullptr && temp->getPieceType() == PieceType::KING && temp->getTeam() != cur){
                 kingTile = &board.getTile(i,j);
                 break;
             }
@@ -158,16 +172,18 @@ bool Game::isCheck() {
             break;
         }
     }
-
+    std::cout<<"king is at "<<kingTile->getRow()<<" "<<kingTile->getCol()<<std::endl;
 
     //get list of all possible enemy moves. If one of those moves can capture the king then the king is in check
     for(int i=0; i<8; i++){
         for(int j=0; j<8; j++){
             Piece* temp = board.getTile(i,j).getPiece();
-            if(temp != nullptr && temp->getTeam() != cur){
+            if(temp != nullptr && temp->getTeam() == cur){
                 for(auto move: temp->fetchAllMoves()){
+                    
                     if(isValidMove(i,j,move[0],move[1])){
                     if(move[0] == kingTile->getRow() && move[1] == kingTile->getCol()){
+                        std::cout<<"Check!"<<std::endl;
                         return true;
                     }
                     }
@@ -188,20 +204,30 @@ bool Game::isCheckmate() {
         for(int j=0; j<8; j++){
             Piece* temp = board.getTile(i,j).getPiece();
             if(temp != nullptr && temp->getTeam() != cur){
+                
                 for(auto move: temp->fetchAllMoves()){
+                    std::cout<<"asdf"<<std::endl;
                     int r2 = move[0];
                     int c2 = move[1];
+                    switchTurn();
                     if(isValidMove(i,j,r2,c2)){
+                        
+                        //board.move({i, j}, {r2, c2});
                         Piece* capturedPiece = board.getTile(r2,c2).getPiece();
                         board.getTile(r2,c2).placePiece(temp);
+                        std::cout<<"checking is checK"<<std::endl;
                         bool inCheck = isCheck();
 
                         board.getTile(i,j).placePiece(temp);
                         board.getTile(r2,c2).placePiece(capturedPiece);
-
+                        switchTurn();
+                        //board.move({r2, c2}, {i, j});
                         if(inCheck == false){
                             return false;
                         }
+                    }
+                    else{
+                        switchTurn();
                     }
 
                 }

@@ -20,13 +20,13 @@ std::vector<std::vector<int>> Queen::fetchAllMoves() {
         {1, 0}, {-1, 0}, {0, 1}, {0, -1}     // Horizontal and vertical
     };
 
+
     for (const auto& dir : directions) {
         int x = curPos[0] + dir.first;
         int y = curPos[1] + dir.second;
 
         while (x >= 0 && x < 8 && y >= 0 && y < 8) {
             allMoves.push_back({x, y});
-            // if (onPath({x, y})) break;
             x += dir.first;
             y += dir.second;
         }
