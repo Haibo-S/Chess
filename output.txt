@@ -1,0 +1,6986 @@
+Entered Setup Mode!
+8 r_ _ _ _
+7 _ _ _ _ 
+6  _ _ _ _
+5 _ _ _ _ 
+4  _ _ _ _
+3 _ _ _ _ 
+2  _ _ _ _
+1 _ _ _ _ 
+
+  ABCEDEFGH
+8 rn _ _ _
+7 _ _ _ _ 
+6  _ _ _ _
+5 _ _ _ _ 
+4  _ _ _ _
+3 _ _ _ _ 
+2  _ _ _ _
+1 _ _ _ _ 
+
+  ABCEDEFGH
+8 rnb_ _ _
+7 _ _ _ _ 
+6  _ _ _ _
+5 _ _ _ _ 
+4  _ _ _ _
+3 _ _ _ _ 
+2  _ _ _ _
+1 _ _ _ _ 
+
+  ABCEDEFGH
+8 rnbq _ _
+7 _ _ _ _ 
+6  _ _ _ _
+5 _ _ _ _ 
+4  _ _ _ _
+3 _ _ _ _ 
+2  _ _ _ _
+1 _ _ _ _ 
+
+  ABCEDEFGH
+8 rnbqk_ _
+7 _ _ _ _ 
+6  _ _ _ _
+5 _ _ _ _ 
+4  _ _ _ _
+3 _ _ _ _ 
+2  _ _ _ _
+1 _ _ _ _ 
+
+  ABCEDEFGH
+8 rnbqkb _
+7 _ _ _ _ 
+6  _ _ _ _
+5 _ _ _ _ 
+4  _ _ _ _
+3 _ _ _ _ 
+2  _ _ _ _
+1 _ _ _ _ 
+
+  ABCEDEFGH
+8 rnbqkbn_
+7 _ _ _ _ 
+6  _ _ _ _
+5 _ _ _ _ 
+4  _ _ _ _
+3 _ _ _ _ 
+2  _ _ _ _
+1 _ _ _ _ 
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 _ _ _ _ 
+6  _ _ _ _
+5 _ _ _ _ 
+4  _ _ _ _
+3 _ _ _ _ 
+2  _ _ _ _
+1 _ _ _ _ 
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 p _ _ _ 
+6  _ _ _ _
+5 _ _ _ _ 
+4  _ _ _ _
+3 _ _ _ _ 
+2  _ _ _ _
+1 _ _ _ _ 
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pp_ _ _ 
+6  _ _ _ _
+5 _ _ _ _ 
+4  _ _ _ _
+3 _ _ _ _ 
+2  _ _ _ _
+1 _ _ _ _ 
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 ppp _ _ 
+6  _ _ _ _
+5 _ _ _ _ 
+4  _ _ _ _
+3 _ _ _ _ 
+2  _ _ _ _
+1 _ _ _ _ 
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppp_ _ 
+6  _ _ _ _
+5 _ _ _ _ 
+4  _ _ _ _
+3 _ _ _ _ 
+2  _ _ _ _
+1 _ _ _ _ 
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 ppppp _ 
+6  _ _ _ _
+5 _ _ _ _ 
+4  _ _ _ _
+3 _ _ _ _ 
+2  _ _ _ _
+1 _ _ _ _ 
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppp_ 
+6  _ _ _ _
+5 _ _ _ _ 
+4  _ _ _ _
+3 _ _ _ _ 
+2  _ _ _ _
+1 _ _ _ _ 
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 ppppppp 
+6  _ _ _ _
+5 _ _ _ _ 
+4  _ _ _ _
+3 _ _ _ _ 
+2  _ _ _ _
+1 _ _ _ _ 
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ _ _ _
+5 _ _ _ _ 
+4  _ _ _ _
+3 _ _ _ _ 
+2  _ _ _ _
+1 _ _ _ _ 
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ _ _ _
+5 _ _ _ _ 
+4  _ _ _ _
+3 _ _ _ _ 
+2 P_ _ _ _
+1 _ _ _ _ 
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ _ _ _
+5 _ _ _ _ 
+4  _ _ _ _
+3 _ _ _ _ 
+2 PP _ _ _
+1 _ _ _ _ 
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ _ _ _
+5 _ _ _ _ 
+4  _ _ _ _
+3 _ _ _ _ 
+2 PPP_ _ _
+1 _ _ _ _ 
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ _ _ _
+5 _ _ _ _ 
+4  _ _ _ _
+3 _ _ _ _ 
+2 PPPP _ _
+1 _ _ _ _ 
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ _ _ _
+5 _ _ _ _ 
+4  _ _ _ _
+3 _ _ _ _ 
+2 PPPPP_ _
+1 _ _ _ _ 
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ _ _ _
+5 _ _ _ _ 
+4  _ _ _ _
+3 _ _ _ _ 
+2 PPPPPP _
+1 _ _ _ _ 
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ _ _ _
+5 _ _ _ _ 
+4  _ _ _ _
+3 _ _ _ _ 
+2 PPPPPPP_
+1 _ _ _ _ 
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ _ _ _
+5 _ _ _ _ 
+4  _ _ _ _
+3 _ _ _ _ 
+2 PPPPPPPP
+1 _ _ _ _ 
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ _ _ _
+5 _ _ _ _ 
+4  _ _ _ _
+3 _ _ _ _ 
+2 PPPPPPPP
+1 R _ _ _ 
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ _ _ _
+5 _ _ _ _ 
+4  _ _ _ _
+3 _ _ _ _ 
+2 PPPPPPPP
+1 RN_ _ _ 
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ _ _ _
+5 _ _ _ _ 
+4  _ _ _ _
+3 _ _ _ _ 
+2 PPPPPPPP
+1 RNB _ _ 
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ _ _ _
+5 _ _ _ _ 
+4  _ _ _ _
+3 _ _ _ _ 
+2 PPPPPPPP
+1 RNBQ_ _ 
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ _ _ _
+5 _ _ _ _ 
+4  _ _ _ _
+3 _ _ _ _ 
+2 PPPPPPPP
+1 RNBQK _ 
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ _ _ _
+5 _ _ _ _ 
+4  _ _ _ _
+3 _ _ _ _ 
+2 PPPPPPPP
+1 RNBQKB_ 
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ _ _ _
+5 _ _ _ _ 
+4  _ _ _ _
+3 _ _ _ _ 
+2 PPPPPPPP
+1 RNBQKBN 
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ _ _ _
+5 _ _ _ _ 
+4  _ _ _ _
+3 _ _ _ _ 
+2 PPPPPPPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+Setup Default ChessBoard
+Setup Mode Complete! Entering the Game!
+8 rnbqkbnr
+7 pppppppp
+6  _ _ _ _
+5 _ _ _ _ 
+4  _ _ _ _
+3 _ _ _ _ 
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ _ _ _
+5 _ _ _ _ 
+4  _ _P_ _
+3 _ _ _ _ 
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ _ _ _
+5 _ _ _ _ 
+4  _ ___ _
+3 _ _ _ _ 
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ _ _ _
+5 _ _ _ _ 
+4  _ ___ _
+3 _ _ _ _ 
+2 PPPPPPPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ _ _ _
+5 _ _ _ _ 
+4  _ ___ _
+3 _ _ _ _ 
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ _ _ _
+5 _ _ _ _ 
+4  _ _P_ _
+3 _ _ _ _ 
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+king is at 0 4
+8 rnbqkbnr
+7 pppppppp
+6  _ _ _ _
+5 _ _ _ _ 
+4  _ ___ _
+3 _ _ _ _ 
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ _ _ _
+5 _ _ P _ 
+4  _ ___ _
+3 _ _ _ _ 
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ _ _ _
+5 _ _   _ 
+4  _ ___ _
+3 _ _ _ _ 
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ _ _ _
+5 _ _   _ 
+4  _ _P_ _
+3 _ _ _ _ 
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ _ _ _
+5 _ _   _ 
+4  _ ___ _
+3 _ _ _ _ 
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ _P_ _
+5 _ _   _ 
+4  _ ___ _
+3 _ _ _ _ 
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4  _ ___ _
+3 _ _ _ _ 
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4  _ _P_ _
+3 _ _ _ _ 
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4  _ _P_ _
+3 _ _ _ _ 
+2 _PPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4  _ _P_ _
+3 P _ _ _ 
+2 _PPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4  _ _P_ _
+3   _ _ _ 
+2 _PPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4  _ _P_ _
+3   _ _ _ 
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4  _ _P_ _
+3   _ _ _ 
+2 _PPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 P_ _P_ _
+3   _ _ _ 
+2 _PPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 __ _P_ _
+3   _ _ _ 
+2 _PPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 __ _P_ _
+3   _ _ _ 
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 __ _P_ _
+3   _ _ _ 
+2 P PP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 __ _P_ _
+3  P_ _ _ 
+2 P PP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 __ _P_ _
+3  __ _ _ 
+2 P PP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 __ _P_ _
+3  __ _ _ 
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 __ _P_ _
+3  __ _ _ 
+2 P PP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _P _P_ _
+3  __ _ _ 
+2 P PP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _  _P_ _
+3  __ _ _ 
+2 P PP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _  _P_ _
+3  __ _ _ 
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _  _P_ _
+3  __ _ _ 
+2 PP_P_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _  _P_ _
+3  _P _ _ 
+2 PP_P_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _  _P_ _
+3  _  _ _ 
+2 PP_P_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _  _P_ _
+3  _  _ _ 
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _  _P_ _
+3  _  _ _ 
+2 PP_P_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ P_P_ _
+3  _  _ _ 
+2 PP_P_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ __P_ _
+3  _  _ _ 
+2 PP_P_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ __P_ _
+3  _  _ _ 
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ __P_ _
+3  _  _ _ 
+2 PPP _PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ __P_ _
+3  _ P_ _ 
+2 PPP _PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ __P_ _
+3  _ __ _ 
+2 PPP _PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ __P_ _
+3  _ __ _ 
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ __P_ _
+3  _ __ _ 
+2 PPP _PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _PP_ _
+3  _ __ _ 
+2 PPP _PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P_ _
+3  _ __ _ 
+2 PPP _PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P_ _
+3  _ __ _ 
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P_ _
+3  _ __ _ 
+2 PPPP_ PP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P_ _
+3  _ __P_ 
+2 PPPP_ PP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P_ _
+3  _ ____ 
+2 PPPP_ PP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P_ _
+3  _ ____ 
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P_ _
+3  _ ____ 
+2 PPPP_ PP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ PP _
+3  _ ____ 
+2 PPPP_ PP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P  _
+3  _ ____ 
+2 PPPP_ PP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P  _
+3  _ ____ 
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P  _
+3  _ ____ 
+2 PPPP_P_P
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P  _
+3  _ ___P 
+2 PPPP_P_P
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P  _
+3  _ ___  
+2 PPPP_P_P
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P  _
+3  _ ___  
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P  _
+3  _ ___  
+2 PPPP_P_P
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P P_
+3  _ ___  
+2 PPPP_P_P
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P __
+3  _ ___  
+2 PPPP_P_P
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P __
+3  _ ___  
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P __
+3  _ ___  
+2 PPPP_PP 
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P __
+3  _ ___ P
+2 PPPP_PP 
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P __
+3  _ ___ _
+2 PPPP_PP 
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P __
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P __
+3  _ ___ _
+2 PPPP_PP 
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P _P
+3  _ ___ _
+2 PPPP_PP 
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PP 
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1  NBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P _ 
+3  _ ___ _
+2 _PPP_PPP
+1  NBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P _ 
+3  _ ___ _
+2 RPPP_PPP
+1  NBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P _ 
+3  _ ___ _
+2 _PPP_PPP
+1  NBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P _ 
+3  _ ___ _
+2 _PPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1  NBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1  _BQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1  RBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1  _BQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 R_BQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 R_BQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P _ 
+3  _N___ _
+2 PPPP_PPP
+1 R_BQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 R_BQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 R_BQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P _ 
+3 N_ ___ _
+2 PPPP_PPP
+1 R_BQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 R_BQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 R_BQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P _ 
+3  _ ___ _
+2 PPP _PPP
+1 R_BQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P _ 
+3  _ ___ _
+2 PPPN_PPP
+1 R_BQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P _ 
+3  _ ___ _
+2 PPP _PPP
+1 R_BQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P _ 
+3  _ ___ _
+2 PPP _PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RN QKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P _ 
+3  _ ___ _
+2 P PP_PPP
+1 RN QKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P _ 
+3  _ ___ _
+2 PBPP_PPP
+1 RN QKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P _ 
+3  _ ___ _
+2 P PP_PPP
+1 RN QKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P _ 
+3  _ ___ _
+2 P PP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RN QKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P _ 
+3  _ ___ _
+2 PPP _PPP
+1 RN QKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P _ 
+3  _ ___ _
+2 PPPB_PPP
+1 RN QKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P _ 
+3  _ ___ _
+2 PPP _PPP
+1 RN QKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P _ 
+3  _ ___ _
+2 PPP _PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P _ 
+3  _ ___ _
+2 PPPPQPPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P _ 
+3  _ __Q _
+2 PPPP_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P Q 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _ 
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   _Q
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PP_P_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPQP_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PP_P_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PP_P_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPP _PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPQ_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPP _PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPP _PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_ BNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_QBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_ BNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQ BNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RN _KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNQ_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RN _KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RN QKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQ BNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPPKPPP
+1 RNBQ BNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQ BNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQ BNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQ _NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQ KNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQ _NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQ BNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_ BNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBK BNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_ BNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQ BNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_ PP
+1 RNBQ BNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_KPP
+1 RNBQ BNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_ PP
+1 RNBQ BNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_ PP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQ BNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPP _PPP
+1 RNBQ BNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPK_PPP
+1 RNBQ BNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPP _PPP
+1 RNBQ BNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPP _PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPPBPPP
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ B__ _
+2 PPPP_PPP
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ B P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _ _   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 _B_   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6  _ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 B_ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_P_P
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PBP
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_P_P
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_P_P
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKB R
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ N
+2 PPPP_PPP
+1 RNBQKB R
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKB R
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKB R
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ __N _
+2 PPPP_PPP
+1 RNBQKB R
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKB R
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKB R
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPPNPPP
+1 RNBQKB R
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKB R
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBN_
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PP 
+1 RNBQKBN_
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPR
+1 RNBQKBN_
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PP 
+1 RNBQKBN_
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PP 
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBN_
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKB _
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBR_
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKB _
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKB R
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+king is at 0 4
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ _ _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___ P __
+4 _ _ _ _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ _ _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ _ _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ _P_ _
+5 ___   __
+4 _ _ _ _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ _ _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 _PPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3 P_ ___ _
+2 _PPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 _PPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 _PPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 P _ P _ 
+3  _ ___ _
+2 _PPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 _PPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 P PP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  P ___ _
+2 P PP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 P PP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 P PP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _P_ P _ 
+3  _ ___ _
+2 P PP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 P PP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PP_P_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _P___ _
+2 PP_P_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PP_P_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PP_P_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ P P _ 
+3  _ ___ _
+2 PP_P_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PP_P_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPP _PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ P__ _
+2 PPP _PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPP _PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPP _PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _PP _ 
+3  _ ___ _
+2 PPP _PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPP _PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_ PP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ __P _
+2 PPPP_ PP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_ PP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_ PP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ PP_ 
+3  _ ___ _
+2 PPPP_ PP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_ PP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_P_P
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___P_
+2 PPPP_P_P
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_P_P
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_P_P
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P P 
+3  _ ___ _
+2 PPPP_P_P
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_P_P
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PP 
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ P
+2 PPPP_PP 
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PP 
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PP 
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _P
+3  _ ___ _
+2 PPPP_PP 
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PP 
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1  NBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 _PPP_PPP
+1  NBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 RPPP_PPP
+1  NBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 _PPP_PPP
+1  NBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 _PPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1  NBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1  _BQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1  RBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1  _BQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 R_BQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 R_BQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _N___ _
+2 PPPP_PPP
+1 R_BQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 R_BQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 R_BQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3 N_ ___ _
+2 PPPP_PPP
+1 R_BQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 R_BQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 R_BQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPP _PPP
+1 R_BQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPN_PPP
+1 R_BQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPP _PPP
+1 R_BQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPP _PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RN QKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 P PP_PPP
+1 RN QKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PBPP_PPP
+1 RN QKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 P PP_PPP
+1 RN QKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 P PP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RN QKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPP _PPP
+1 RN QKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPB_PPP
+1 RN QKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPP _PPP
+1 RN QKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPP _PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPPQPPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ __Q _
+2 PPPP_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P Q 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   _Q
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PP_P_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPQP_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PP_P_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PP_P_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPP _PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPQ_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPP _PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPP _PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_ BNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_QBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_ BNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQ BNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RN _KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNQ_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RN _KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RN QKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQ BNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPPKPPP
+1 RNBQ BNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQ BNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQ BNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQ _NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQ KNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQ _NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQ BNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_ BNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBK BNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_ BNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQ BNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_ PP
+1 RNBQ BNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_KPP
+1 RNBQ BNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_ PP
+1 RNBQ BNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_ PP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQ BNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPP _PPP
+1 RNBQ BNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPK_PPP
+1 RNBQ BNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPP _PPP
+1 RNBQ BNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPP _PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPPBPPP
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ B__ _
+2 PPPP_PPP
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ B P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 _B_   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 B_ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_P_P
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PBP
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_P_P
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_P_P
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKB R
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ N
+2 PPPP_PPP
+1 RNBQKB R
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKB R
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKB R
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ __N _
+2 PPPP_PPP
+1 RNBQKB R
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKB R
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKB R
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPPNPPP
+1 RNBQKB R
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKB R
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBN_
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PP 
+1 RNBQKBN_
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPR
+1 RNBQKBN_
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PP 
+1 RNBQKBN_
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PP 
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBN_
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKB _
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBR_
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKB _
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKB R
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+king is at 0 4
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ _ _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___ P __
+4 _ _ _ _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ _ _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ _ _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ _P_ _
+5 ___   __
+4 _ _ _ _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ _ _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 _PPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3 P_ ___ _
+2 _PPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 _PPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 _PPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 P _ P _ 
+3  _ ___ _
+2 _PPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 _PPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 P PP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  P ___ _
+2 P PP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 P PP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 P PP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _P_ P _ 
+3  _ ___ _
+2 P PP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 P PP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PP_P_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _P___ _
+2 PP_P_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PP_P_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PP_P_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ P P _ 
+3  _ ___ _
+2 PP_P_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PP_P_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPP _PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ P__ _
+2 PPP _PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPP _PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPP _PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _PP _ 
+3  _ ___ _
+2 PPP _PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPP _PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_ PP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ __P _
+2 PPPP_ PP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_ PP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_ PP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ PP_ 
+3  _ ___ _
+2 PPPP_ PP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_ PP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_P_P
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___P_
+2 PPPP_P_P
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_P_P
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_P_P
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P P 
+3  _ ___ _
+2 PPPP_P_P
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_P_P
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PP 
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ P
+2 PPPP_PP 
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PP 
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PP 
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _P
+3  _ ___ _
+2 PPPP_PP 
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PP 
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1  NBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 _PPP_PPP
+1  NBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 RPPP_PPP
+1  NBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 _PPP_PPP
+1  NBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 _PPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1  NBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1  _BQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1  RBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1  _BQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 R_BQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 R_BQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _N___ _
+2 PPPP_PPP
+1 R_BQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 R_BQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 R_BQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3 N_ ___ _
+2 PPPP_PPP
+1 R_BQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 R_BQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 R_BQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPP _PPP
+1 R_BQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPN_PPP
+1 R_BQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPP _PPP
+1 R_BQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPP _PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RN QKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 P PP_PPP
+1 RN QKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PBPP_PPP
+1 RN QKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 P PP_PPP
+1 RN QKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 P PP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RN QKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPP _PPP
+1 RN QKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPB_PPP
+1 RN QKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPP _PPP
+1 RN QKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPP _PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPPQPPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ __Q _
+2 PPPP_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P Q 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   _Q
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PP_P_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPQP_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PP_P_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PP_P_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPP _PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPQ_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPP _PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPP _PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_ BNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_QBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_ BNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQ BNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RN _KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNQ_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RN _KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RN QKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQ BNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPPKPPP
+1 RNBQ BNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQ BNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQ BNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQ _NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQ KNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQ _NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQ BNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_ BNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBK BNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_ BNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNB_KBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQ BNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_ PP
+1 RNBQ BNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_KPP
+1 RNBQ BNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_ PP
+1 RNBQ BNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_ PP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQ BNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPP _PPP
+1 RNBQ BNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPK_PPP
+1 RNBQ BNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPP _PPP
+1 RNBQ BNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPP _PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPPBPPP
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ B__ _
+2 PPPP_PPP
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ B P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 _B_   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 B_ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_P_P
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PBP
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_P_P
+1 RNBQK_NR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_P_P
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKB R
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ N
+2 PPPP_PPP
+1 RNBQKB R
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKB R
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKB R
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ __N _
+2 PPPP_PPP
+1 RNBQKB R
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKB R
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKB R
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPPNPPP
+1 RNBQKB R
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKB R
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBN_
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PP 
+1 RNBQKBN_
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPR
+1 RNBQKBN_
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PP 
+1 RNBQKBN_
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PP 
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBN_
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKB _
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBR_
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKB _
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKB R
+
+  ABCEDEFGH
+8 rnbqkbnr
+7 pppppppp
+6 __ ___ _
+5 ___   __
+4 _ _ P _ 
+3  _ ___ _
+2 PPPP_PPP
+1 RNBQKBNR
+
+  ABCEDEFGH

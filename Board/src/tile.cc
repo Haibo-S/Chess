@@ -15,6 +15,20 @@ void Tile::removePiece(){
 
 }
 
+
+
+void Tile::checkPlace(Piece *piece){
+    if(getPiece() != nullptr) this->checkRemove();
+    p = piece;
+}
+
+void Tile::checkRemove(){
+
+    if(p) {
+        p = nullptr;
+    }
+
+}
 Piece* Tile::getPiece(){
     return this->p;
 }

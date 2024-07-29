@@ -15,15 +15,17 @@ class Game {
     Board board;
     Team cur;
     vector<vector<int>> prevMove;
-
+    Tile* getKing();
     void switchTurn();
     bool isValidMove(int r1, int c1, int r2, int c2);
     bool isCheck();
+
     bool isCheckmate();
     bool isStalemate();
     void moveCommand(const std::string &command);
-    bool checkCheck(int r1, int c1, int r2, int c2);
+    bool checkCheck();
     bool isPathObstructed(int r1, int c1, int r2, int c2);
+    bool isKinginCheck();
     
     public:
 

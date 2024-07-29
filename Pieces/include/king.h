@@ -5,11 +5,16 @@
 
 class King : public Piece {
     // bool hasMoved = false;
+    bool inCheck;
 public:
     // King(Team t, int row, int col, std::vector<Piece*>& pieces);
+    
     King(Team t, int row, int col);
     PieceType getPieceType() override;
+    
     std::vector<std::vector<int>> fetchAllMoves() override;
+    bool getInCheck() override;
+    void setInCheck() override;
     // std::vector<std::vector<int>> fetchAllCheckMoves() override;
     // std::vector<std::vector<int>> fetchAllCaptureMoves() override;
     // bool checkAttackOnEnemyKing() override;
