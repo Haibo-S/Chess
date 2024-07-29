@@ -23,7 +23,8 @@ Text::Text() {
 }
 
 void Text::notify(Tile &tile) {
-    boardDisplay[tile.getRow()][tile.getCol()] = printChar(tile);
+    boardDisplay[7-tile.getRow()][tile.getCol()] = printChar(tile);
+    std::cout <<*this;
 }
 
 char Text::printChar(Tile& tile) {
