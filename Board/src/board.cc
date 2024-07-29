@@ -100,6 +100,12 @@ bool Board::move(vector<int> from, vector<int> to){
     return true;
 }
 
+bool Board::removePiece(vector<int> coord){
+    board[coord[0]][coord[1]].removePiece();
+    // cout << "removed Piece" << endl;
+    return true;
+}
+
 
 void Board::toggleTurn(){
     turn = turn == Team::W ? Team::B : Team::W;

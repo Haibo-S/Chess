@@ -23,6 +23,8 @@ int main(){
     while(getline(std::cin, line)){
         g.commandHandler(line);
     }
+
+    while(true){}
     return 0;
 }
 

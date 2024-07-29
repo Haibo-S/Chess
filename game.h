@@ -8,10 +8,13 @@
 #include <iostream>
 #include <string>
 
+extern bool isEnpassantMove;
+
 class Game {
 
     Board board;
     Team cur;
+    vector<vector<int>> prevMove;
 
     void switchTurn();
     bool isValidMove(int r1, int c1, int r2, int c2);
