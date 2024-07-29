@@ -58,7 +58,10 @@ void Game::moveCommand(const std::string &command) {
     std::cout << "r2 is: " << r2 << std::endl;
     std::cout << "c2 is: " << c2 << std::endl;
 
-
+    if(board.getTile(r1,c1).getPiece() == nullptr){
+        std::cout << "Space is empty, please call move on a tile with a piece."<<std::endl;
+        return;
+    }
     if (isValidMove(r1, c1, r2, c2)) {
         board.move({r1, c1}, {r2, c2});
         if (isCheckmate()) {
