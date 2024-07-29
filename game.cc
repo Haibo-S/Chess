@@ -34,6 +34,68 @@ void Game::commandHandler(const std::string &command) {
     // Add more commands as needed
 }
 
+bool Game::setUpHandler(const std::string &command){
+    std::istringstream iss(command);
+    std::string token;
+    std::vector<std::string> tokens;
+    while (iss >> token) {
+        tokens.push_back(token);
+    }
+
+    if (tokens[0] == "done"){
+
+        // More to be done here!
+        return false;
+    }else if (tokens[0] == "+"){
+        if(!(tokens[1] == "Q" || tokens[1] == "B" || tokens[1] == "R" \
+        || tokens[1] == "N" || tokens[1] == "P" || tokens[1] == "K" \
+        || tokens[1] == "q" || tokens[1] == "b" || tokens[1] == "r" \
+        || tokens[1] == "n" || tokens[1] == "p" || tokens[1] == "k" ) \
+        || (tokens[2][0] < 'a' || tokens[2][0] > 'h') \
+        || (tokens[2][1] < '1' || tokens[2][1] > '8') \
+        ){
+            std::cout << "Invalid Setup Input!" << std::endl;
+            return true;
+        }
+
+        int r1 = 7 - (tokens[2][1] - '1');
+        int c1 = tokens[2][0] - 'a';
+        char piece = toupper(tokens[1][0]);
+        bool team = !islower(tokens[1][0]);
+
+        board.placeBoardPiece(r1, c1, piece, team);
+    }else if (tokens[0] == "-"){
+        if((tokens[1][0] < 'a' || tokens[1][0] > 'h') \
+        || (tokens[1][1] < '1' || tokens[1][1] > '8')){
+            std::cout << "Invalid Setup Input!" << std::endl;
+            return true;
+        }
+
+        int r1 = 7 - (tokens[1][1] - '1');
+        int c1 = tokens[1][0] - 'a';
+
+        if(board.getTile(r1,c1).getPiece() == nullptr){
+            return true;
+        }else{
+            board.removePiece({r1, c1});
+        }
+
+    }else if (tokens[0] == "="){
+        if(tokens[1] != "w" && tokens[1] != "W" && tokens[1] != "b" && tokens[1] != "B"){
+            std::cout << "Invalid Setup Input!" << std::endl;
+            return true;
+        }
+        this->cur = tokens[1] == "w" || tokens[1] == "W" ? Team::W : Team::B;
+        std::cout << "Turn is set to: " << ((tokens[1] == "w" || tokens[1] == "W") ? "White" : "Black") << std::endl;
+    }else if (tokens[0] == "default"){
+        board.initDefault();
+        std::cout << "Setup Default ChessBoard" << std::endl;
+    }else{
+        std::cout << "Invalid Setup Input!" << std::endl;
+    }
+    return true;
+}
+
 void Game::moveCommand(const std::string &command) {
     // Parse the command to get start and end positions
     // Example: move e2 e4
@@ -63,7 +125,7 @@ void Game::moveCommand(const std::string &command) {
         int c1 = tokens[1][0] - 'a';
         int r2 = 7 - (tokens[2][1] - '1');
         int c2 = tokens[2][0] - 'a';
-        int promo = tokens[3][0];
+        char promo = tokens[3][0];
 
         if(board.getTile(r1,c1).getPiece() == nullptr || board.getTile(r1,c1).getPieceType() != PieceType::PAWN){
             std::cout << "Invalid Move. Promotion must be a pawn"<<std::endl;
@@ -461,3 +523,5 @@ bool Game::isPathObstructed(int r1, int c1, int r2, int c2) {
 
     return false;
 }
+
+

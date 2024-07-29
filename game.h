@@ -29,10 +29,11 @@ class Game {
 
         Game() : cur{Team::W}, board{500} {
             board.init();
-            board.initDefault();
+            // board.initDefault();
         };
         void start();
         void commandHandler(const std::string &command);
+        bool setUpHandler(const std::string &command);
 };
 
 #endif
