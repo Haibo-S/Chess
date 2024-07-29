@@ -157,7 +157,8 @@ void Game::moveCommand(const std::string &command) {
         prevMove = {{r1, c1}, {r2, c2}};
         switchTurn();
 
-    }else{
+    }
+    else{
         // Non Promotion Move
         // Invalid Input
         if(tokens[0] != "move" || (tokens[1][0] < 'a' || tokens[1][0] > 'h') \
@@ -345,11 +346,11 @@ bool Game::isValidMove(int r1, int c1, int r2, int c2) {
             }
 
             // check the king wont move into check
-            if (piece->getPieceType() == PieceType::KING) {
-                if (checkCheck(r1, c1, r2, c2)) {
-                    return false;
-                }
-            }
+            // if (piece->getPieceType() == PieceType::KING) {
+            //     if (checkCheck(r1, c1, r2, c2)) {
+            //         return false;
+            //     }
+            // }
 
             piece->setHasMovedToTrue();
             return true;
@@ -375,7 +376,7 @@ bool Game::isCheck() {
         for(int j=0; j<8; j++){
             Piece* temp = board.getTile(i,j).getPiece();
 
-            if(temp != nullptr && temp->getPieceType() == PieceType::KING && temp->getTeam() == cur){
+            if(temp != nullptr && temp->getPieceType() == PieceType::KING && temp->getTeam() != cur){
                 kingTile = &board.getTile(i,j);
                 break;
             }
@@ -384,16 +385,18 @@ bool Game::isCheck() {
             break;
         }
     }
-
+    std::cout<<"king is at "<<kingTile->getRow()<<" "<<kingTile->getCol()<<std::endl;
 
     //get list of all possible enemy moves. If one of those moves can capture the king then the king is in check
     for(int i=0; i<8; i++){
         for(int j=0; j<8; j++){
             Piece* temp = board.getTile(i,j).getPiece();
-            if(temp != nullptr && temp->getTeam() != cur){
+            if(temp != nullptr && temp->getTeam() == cur){
                 for(auto move: temp->fetchAllMoves()){
+                    
                     if(isValidMove(i,j,move[0],move[1])){
                     if(move[0] == kingTile->getRow() && move[1] == kingTile->getCol()){
+                        std::cout<<"Check!"<<std::endl;
                         return true;
                     }
                     }
@@ -414,20 +417,30 @@ bool Game::isCheckmate() {
         for(int j=0; j<8; j++){
             Piece* temp = board.getTile(i,j).getPiece();
             if(temp != nullptr && temp->getTeam() != cur){
+                
                 for(auto move: temp->fetchAllMoves()){
+                    std::cout<<"asdf"<<std::endl;
                     int r2 = move[0];
                     int c2 = move[1];
+                    switchTurn();
                     if(isValidMove(i,j,r2,c2)){
+                        
+                        //board.move({i, j}, {r2, c2});
                         Piece* capturedPiece = board.getTile(r2,c2).getPiece();
                         board.getTile(r2,c2).placePiece(temp);
+                        std::cout<<"checking is checK"<<std::endl;
                         bool inCheck = isCheck();
 
                         board.getTile(i,j).placePiece(temp);
                         board.getTile(r2,c2).placePiece(capturedPiece);
-
+                        switchTurn();
+                        //board.move({r2, c2}, {i, j});
                         if(inCheck == false){
                             return false;
                         }
+                    }
+                    else{
+                        switchTurn();
                     }
 
                 }
