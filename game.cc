@@ -487,7 +487,7 @@ bool Game::isValidMove(int r1, int c1, int r2, int c2) {
 
                 //check that nothing is blocking the path
                 if (c1 == c2) {
-
+                    if(isPathObstructed(r1,c1,r2,c2)){return false;}
                     if (endTile.getPiece() != nullptr) {
                         return false;
                     }
@@ -908,6 +908,17 @@ bool Game::checkCheck() {
 
 
 bool Game::isPathObstructed(int r1, int c1, int r2, int c2) {
+    Piece* piece = board.getTile(r1,c1).getPiece();
+    if(piece->getPieceType() == PieceType::PAWN && piece->getTeam() == Team::W){
+        if(board.getTile(r1-1,c1).getPiece()!=nullptr){
+            return true;
+        }
+    } 
+    else if(piece->getPieceType() == PieceType::PAWN && piece->getTeam() == Team::B){
+        if(board.getTile(r1+1,c1).getPiece()!=nullptr){
+            return true;
+        }
+    }
     bool isDiagonal = false;
     int rowDirection = (r2 - r1) > 0 ? 1 : (r2 - r1) < 0 ? -1 : 0;
     int colDirection = (c2 - c1) > 0 ? 1 : (c2 - c1) < 0 ? -1 : 0;
