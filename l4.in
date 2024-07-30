@@ -1,0 +1,10 @@
+level4
+setup 
+default
+done
+move e2 e4
+move b1 c3
+move c3 b5
+move f1 c4
+move g1 f3
+resign

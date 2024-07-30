@@ -2,12 +2,22 @@
 #define _LEVEL4_H__
 
 #include <vector>
+#include <map>
 #include "./player.h"
 #include "./../../game.h"
 
 class Level4: public Player {
+
   public:
-    Level4(Team tc, Board *b, Game *g, bool t) : Player(tc, b, g, t){};
+    Level4(Team tc, Board *b, Game *g, bool t) : Player(tc, b, g, t){
+    std::srand(std::time(0));
+
+    };
+
+
+    int getVal(PieceType type);
+        bool isCapturable(int row, int col);
+
     void turn() override;
 };
 

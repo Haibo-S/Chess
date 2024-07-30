@@ -27,17 +27,20 @@ void Level3::turn() {
                 auto pieceMoves = piece->fetchAllMoves();
                 for (const auto& move : pieceMoves) {
                     if (game->isValidMove(i, j, move[0], move[1])) {
-                        // Temporarily make the move
-                        Tile& startTile = board->getTile(i, j);
-                        Tile& endTile = board->getTile(move[0], move[1]);
-                        Piece* capturedPiece = endTile.getPiece();
-                        startTile.checkRemove();
-                        endTile.checkPlace(piece);
+
+                       std::vector<std::vector<char>> textdisplay = game->printTable();
+                        char fillChar = textdisplay[i][j];
+                        textdisplay[move[0]][move[1]] = fillChar;
+                        textdisplay[i][j] = ' ';
+
+                        if (game->isKingInCheck(textdisplay, team == Team::W)) {
+                            continue;
+                        }
 
                         if(isCapturable(i,j) && !isCapturable(move[0], move[1])){
                             avoidCaptureMoves.push_back({i, j, move[0], move[1]});
                         }
-                        else if (capturedPiece) {
+                        else if (board->getTile(move[0], move[1]).getPiece() != nullptr) {
                             capturingMoves.push_back({i, j, move[0], move[1]});
                         } else if (game->isCheck()) {
                             checkingMoves.push_back({i, j, move[0], move[1]});
@@ -45,12 +48,6 @@ void Level3::turn() {
                             otherMoves.push_back({i, j, move[0], move[1]});
                         }
 
-                        // Undo the move
-                        endTile.checkRemove();
-                        startTile.checkPlace(piece);
-                        if (capturedPiece) {
-                            endTile.checkPlace(capturedPiece);
-                        }
                     }
                 }
             }
