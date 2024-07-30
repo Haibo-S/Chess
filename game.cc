@@ -153,7 +153,7 @@ void Game::moveCommand(const std::string &command) {
             exit(0);
             }  
             else{
-                std::cout << (cur == Team::W ? "Black" : "White") << " is in check!" << std::endl;
+                std::cout << (cur == Team::B ? "Black" : "White") << " is in check!" << std::endl;
 
             }
 
@@ -202,7 +202,7 @@ void Game::moveCommand(const std::string &command) {
                 exit(0);
                 }  
                 else{
-                    std::cout << (cur == Team::W ? "Black" : "White") << " is in check!" << std::endl;
+                    std::cout << (cur == Team::B ? "Black" : "White") << " is in check!" << std::endl;
 
                 }
 
@@ -499,7 +499,7 @@ bool Game::isCheckmate() {
     }
 
     switchTurn();
-
+    std::cout<<printTeam(cur)<<std::endl;
     // Now we need to check if there are any legal moves that can get the king out of check
     for (int i = 0; i < 8; ++i) {
         for (int j = 0; j < 8; ++j) {
@@ -528,7 +528,9 @@ bool Game::isCheckmate() {
                         }
 
                         if (!kingInCheck) {
-                            switchTurn();
+                           // switchTurn();
+                                std::cout<<"returning "<<printTeam(cur)<<std::endl;
+
                             return false;
                         }
                     }
