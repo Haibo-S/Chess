@@ -55,7 +55,18 @@ void Game::start() {
     
     std::string command;
     while (true) {
-        std::cout << (cur == Team::W ? "White's" : "Black's") << " turn. Enter command: ";
+
+        if(playerType == "human"){
+            std::cout << (cur == Team::W ? "White's" : "Black's") << " turn. Enter command: ";
+        }
+        if(curPlayer==whitePlayer && playerType != "human"){
+            std::cout<<"Your turn. Enter command: ";
+        }
+        
+        if(curPlayer==blackPlayer && playerType != "human"){
+            std::cout<<"Computer's move"<<std::endl;
+        }
+
         curPlayer->turn();
     }
 }

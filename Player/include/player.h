@@ -3,7 +3,8 @@
 
 #include <vector>
 #include "./../../Board/include/board.h"
-
+#include <cstdlib>
+#include <ctime>
 class Game;  // Forward declaration
 
 class Player {

@@ -7,7 +7,7 @@
 
 class Level1: public Player {
   public:
-    Level1(Team tc, Board *b, Game *g, bool t): Player(tc, b, g, t) {};
+    Level1(Team tc, Board *b, Game *g, bool t): Player(tc, b, g, t) {std::srand(std::time(0));};
     void turn() override;
 };
 

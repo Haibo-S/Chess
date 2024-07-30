@@ -28,7 +28,6 @@ class Game {
     Player* curPlayer;
     void switchTurn();
 
-    bool isValidMove(int r1, int c1, int r2, int c2);
     bool simpleIsValidMove(int r1, int c1, int r2, int c2);
 
     bool isCheck();
@@ -52,6 +51,7 @@ class Game {
             // board.initDefault();
         };
         ~Game();
+    bool isValidMove(int r1, int c1, int r2, int c2);
 
         void start();
         void commandHandler(const std::string &command);
