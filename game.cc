@@ -444,7 +444,7 @@ bool Game::isValidMove(int r1, int c1, int r2, int c2) {
 
                     // enPassant
                     if(pawn->getEnPassant()){
-                        // cout << "Reached Here" << endl;
+                        cout << "Reached Here" << endl;
                         if(c1 == 0){
                             if( cur == Team::W \
                             && r2 == r1 - 1 && c2 == c1 + 1 && endTile.getPiece() == nullptr \
@@ -518,8 +518,10 @@ bool Game::isValidMove(int r1, int c1, int r2, int c2) {
                             }
                             
                         }
+                        
                     }
-
+                        piece->setHasMovedToTrue();
+                        return true;
 
                 }
 
