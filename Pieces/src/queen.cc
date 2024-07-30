@@ -6,6 +6,7 @@
 
 Queen::Queen(Team t, int row, int col)
     : Piece(t, row, col) {}
+Queen::~Queen() {}
 
 PieceType Queen::getPieceType() {
     return PieceType::QUEEN;

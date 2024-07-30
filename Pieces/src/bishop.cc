@@ -6,6 +6,7 @@
 
 Bishop::Bishop(Team t, int row, int col)
     : Piece(t, row, col) {}
+Bishop::~Bishop() {}
 
 PieceType Bishop::getPieceType() {
     return PieceType::BISHOP;

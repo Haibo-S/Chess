@@ -6,6 +6,7 @@
 using namespace std;
 
 bool isEnpassantMove = false;
+bool isCassleMove = false;
 
 void Game::start() {
     std::string command;
@@ -194,14 +195,22 @@ void Game::moveCommand(const std::string &command) {
                 board.removePiece({r1, c2});
                 isEnpassantMove = false;
             }
+            if(isCheck()){
+
             if (isCheckmate()) {
                 std::cout << "Checkmate! " << (cur == Team::W ? "White" : "Black") << " wins!" << std::endl;
                 exit(0);
-            } else if (isStalemate()) {
+                }  
+                else{
+                    std::cout << (cur == Team::W ? "Black" : "White") << " is in check!" << std::endl;
+
+                }
+
+
+            }
+            else if (isStalemate()) {
                 std::cout << "Stalemate! It's a draw!" << std::endl;
                 exit(0);
-            } else if (isCheck()) {
-                std::cout << (cur == Team::W ? "Black" : "White") << " is in check!" << std::endl;
             }
 
             prevMove = {{r1, c1}, {r2, c2}};
@@ -226,7 +235,7 @@ bool Game::isValidMove(int r1, int c1, int r2, int c2) {
 
     // std::cout << printTeam(piece->getTeam()) << " " << printTeam(cur) << std::endl;
 
-    if (!piece || piece->getTeam() != cur) {
+    if (!piece||piece->getPieceType()==PieceType::NONE || piece->getTeam() != cur) {
         return false;
     }
 
@@ -236,12 +245,8 @@ bool Game::isValidMove(int r1, int c1, int r2, int c2) {
     //     cout << move[0] << " " << move[1] << endl;
     // }
 
-    // cout << "reached here" << endl;
-
     for (auto& move : validMoves) {
         if (move[0] == r2 && move[1] == c2) {
-            
-            
 
             if (piece->getPieceType() == PieceType::PAWN) {
                 Pawn* pawn = dynamic_cast<Pawn*>(piece);
@@ -345,36 +350,59 @@ bool Game::isValidMove(int r1, int c1, int r2, int c2) {
                 }
 
                 if(!dynamic_cast<Pawn*>(piece)->getEnPassant() &&  piece->getTeam() == Team::W && r2 == 3){
-                    // std::cout << "Setting EnPassant!" << std::endl;
                     dynamic_cast<Pawn*>(piece)->setEnPassant(true);
                 }else if(!dynamic_cast<Pawn*>(piece)->getEnPassant() && piece->getTeam() == Team::B && r2 == 4){
-                    // std::cout << "Setting EnPassant!" << std::endl;
                     dynamic_cast<Pawn*>(piece)->setEnPassant(true);
                 }else{
                     dynamic_cast<Pawn*>(piece)->setEnPassant(false);
                 }
 
-                
+                piece->setHasMovedToTrue();
+                return true;
             }
 
-
-            if(piece->getPieceType() == PieceType::KING){
-                
+            if(endTile.getPiece() != nullptr && endTile.getPiece()->getTeam() == cur){
+                return false;
             }
-            // check the king wont move into check
-            // if (piece->getPieceType() == PieceType::KING) {
-            //     if (checkCheck(r1, c1, r2, c2)) {
-            //         return false;
-            //     }
-            // }
-            if (piece->getPieceType() == PieceType::PAWN || piece->getPieceType() == PieceType::ROOK || piece->getPieceType() == PieceType::BISHOP || piece->getPieceType() == PieceType::QUEEN) {
-                if (isPathObstructed(r1, c1, r2, c2)) {
-                    return false;
+
+            // cout << "Reached inside Move" << endl;
+            // Cassle Check
+            // cout << ((piece->getPieceType() == PieceType::KING) ? "King" : "None") << endl;
+            // cout << r1 << endl;
+            // cout << r2 << endl;
+            // cout << c1 << endl;
+            // cout << c2 << endl;
+            if(piece->getPieceType() == PieceType::KING && r1 == r2 && (c2 == c1 + 2 || c2 == c1 - 2)){
+                cout << "Inside Cassle" << endl;
+                if(piece->getHasMoved()) return false;
+                if(c2 == c1 + 2){
+                    if(board.getTile(r1, c1 + 3).getPiece() != nullptr && board.getTile(r1, c1 + 3).getPieceType() == PieceType::ROOK \
+                    && !board.getTile(r1, c1 + 3).getPiece()->getHasMoved() \
+                    && board.getTile(r1, c1 + 1).getPiece() == nullptr && board.getTile(r1, c1 + 2).getPiece() == nullptr){
+                        isCassleMove = true;
+                        piece->setHasMovedToTrue();
+                        board.getTile(r1, c1 + 3).getPiece()->setHasMovedToTrue();
+                        return true;
+                    }else{
+                        return false;
+                    }
+                }else if(c2 == c1 - 2){
+                    if(board.getTile(r1, c1 - 4).getPiece() != nullptr && board.getTile(r1, c1 - 4).getPieceType() == PieceType::ROOK \
+                    && !board.getTile(r1, c1 - 4).getPiece()->getHasMoved() \
+                    && board.getTile(r1, c1 - 1).getPiece() == nullptr && board.getTile(r1, c1 - 2).getPiece() == nullptr && board.getTile(r1, c1 - 3).getPiece() == nullptr){
+                        isCassleMove = true;
+                        piece->setHasMovedToTrue();
+                        board.getTile(r1, c1 - 4).getPiece()->setHasMovedToTrue();
+                        return true;
+                    }else{
+                        return false;
+                    }
+
                 }
             }
-
-
-
+            if (isPathObstructed(r1, c1, r2, c2)) {
+                    return false;
+                }
             Piece* capturedPiece = endTile.getPiece();
             startTile.checkRemove();
             endTile.checkPlace(piece);
@@ -393,13 +421,12 @@ bool Game::isValidMove(int r1, int c1, int r2, int c2) {
 
             piece->setHasMovedToTrue();
             return true;
-        }
-
-        
+        }      
     }
 
     return false;
 }
+
 Tile* Game::getKing(){
         Tile* kingTile = nullptr;
 
@@ -439,7 +466,7 @@ bool Game::isCheck() {
         }
     }
 
-    std::cout<<"king location "<<kingTile->getRow()<<" "<<kingTile->getCol()<<std::endl;
+    //std::cout<<"king location "<<kingTile->getRow()<<" "<<kingTile->getCol()<<std::endl;
         
     //get list of all possible enemy moves. If one of those moves can capture the king then the king is in check
     for(int i=0; i<8; i++){
@@ -450,7 +477,10 @@ bool Game::isCheck() {
                     
                     if(isValidMove(i,j,move[0],move[1])){
                     if(move[0] == kingTile->getRow() && move[1] == kingTile->getCol()){
-                        kingTile->getPiece()->setInCheck();
+                      //  kingTile->getPiece()->setInCheck();
+
+                    //   std::cout<<"is in check"<<std::endl;
+                    //   std::cout<<printTeam(cur)<<std::endl;
                         return true;
                     }
                     }
@@ -464,80 +494,55 @@ bool Game::isCheck() {
 
 
 bool Game::isCheckmate() {
-
-    if(isCheck() == false){
+    if (!isCheck()) {
         return false;
     }
-    std::cout<<"team is "<<printTeam(cur)<<std::endl;
 
-    Tile* kingTile = nullptr; //the team in check's king
+    switchTurn();
 
+    // Now we need to check if there are any legal moves that can get the king out of check
+    for (int i = 0; i < 8; ++i) {
+        for (int j = 0; j < 8; ++j) {
+            Piece* piece = board.getTile(i, j).getPiece();
+            if (piece != nullptr && piece->getPieceType() != PieceType::NONE && piece->getTeam() == cur) {
+                std::vector<std::vector<int>> moves = piece->fetchAllMoves();
+                for (const auto& move : moves) {
+                    int targetRow = move[0];
+                    int targetCol = move[1];
+                    if (isValidMove(i, j, targetRow, targetCol)) {
+                        Tile& endTile = board.getTile(targetRow, targetCol);
+                        Tile& startTile = board.getTile(i, j);
 
-    for(int i=0; i<8; i++){
-        for(int j=0; j<8; j++){
-            Piece* temp = board.getTile(i,j).getPiece();
+                        Piece* capturedPiece = endTile.getPiece();
+                        startTile.checkRemove();
+                        endTile.checkPlace(piece);
 
-            if(temp != nullptr && temp->getPieceType() == PieceType::KING && temp->getTeam() != cur){
-                kingTile = &board.getTile(i,j);
-                break;
-            }
-        }
-        if(kingTile != nullptr){
-            break;
-        }
-    }
+                        // Check if the king is in check after the move
+                        bool kingInCheck = checkCheck();
 
+                        // Undo the move
+                        endTile.checkRemove();
+                        startTile.checkPlace(piece);
+                        if (capturedPiece) {
+                            endTile.checkPlace(capturedPiece);
+                        }
 
-
-    for(int i=0; i<8; i++){
-        for(int j=0; j<8; j++){
-            Piece* temp = board.getTile(i,j).getPiece();
-            if(temp != nullptr && temp->getTeam() != cur){
-                std::cout<<"??"<<std::endl;
-                for(auto move: temp->fetchAllMoves()){
-                    
-                    int r2 = move[0];
-                    int c2 = move[1];
-                    switchTurn();
-                    if(isValidMove(i,j,r2,c2)){
-                        
-                        //board.move({i, j}, {r2, c2});
-                        Piece* capturedPiece = board.getTile(r2,c2).getPiece();
-                        board.getTile(r2,c2).checkRemove();
-                        board.getTile(r2,c2).checkPlace(temp);
-
-
-                        
-                        std::cout<<"team is "<<printTeam(cur)<<std::endl;
-                        
-                        bool inCheck = isCheck();
-                        
-
-
-
-                        std::cout<<"in check = "<<inCheck<<std::endl;
-                        
-                        board.getTile(i,j).checkPlace(temp);
-                        board.getTile(r2,c2).checkPlace(capturedPiece);
-
-                        switchTurn();
-                        //board.move({r2, c2}, {i, j});
-                        if(inCheck == false){
+                        if (!kingInCheck) {
+                            switchTurn();
                             return false;
                         }
-                        
                     }
-                    else{
-                        switchTurn();
-                    }
-
                 }
-            }  
-
+            }
         }
     }
-    return true;
+
+    switchTurn();
+    return true; // No legal moves found, it's checkmate
 }
+
+
+
 
 bool Game::isStalemate() {
     if(isCheck()){
@@ -599,6 +604,7 @@ bool Game::checkCheck() {
     if (kingTile == nullptr) {
         return false; // No king found, should not happen
     }
+
 
     int kingRow = kingTile->getRow();
     int kingCol = kingTile->getCol();

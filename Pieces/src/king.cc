@@ -6,6 +6,7 @@
 
 King::King(Team t, int row, int col)
     : Piece(t, row, col), inCheck{false} {}
+King::~King() {}
 
 PieceType King::getPieceType() {
     return PieceType::KING;
@@ -79,9 +80,9 @@ std::vector<std::vector<int>> King::fetchAllMoves() {
 //     this->hasMoved = true;
 // }
 
-    bool King::getInCheck(){
-        return inCheck;
-    }
-    void King::setInCheck(){
-        inCheck=!inCheck;
-    }
+    // bool King::getInCheck(){
+    //     return inCheck;
+    // }
+    // void King::setInCheck(){
+    //     inCheck=!inCheck;
+    // }

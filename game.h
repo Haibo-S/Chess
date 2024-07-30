@@ -5,10 +5,12 @@
 #include "Pieces/include/piece.h"
 #include "Display/include/text.h"
 #include "Display/include/graphic.h"
+
 #include <iostream>
 #include <string>
 
 extern bool isEnpassantMove;
+extern bool isCassleMove;
 
 class Game {
 

@@ -2,6 +2,7 @@
 
 #include <algorithm> 
 
+Piece::~Piece() {}
 
 Team Piece::getTeam() {
     return this->team;
