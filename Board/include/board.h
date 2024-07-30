@@ -19,7 +19,7 @@ using namespace std;
 class Board {
   private:
     std::vector<std::vector<Tile>> board;
-    Team turn; // white or black
+    Team turn;
     Text td;
     Graphic gd;
 
@@ -30,26 +30,16 @@ class Board {
     void init();
     void initDefault();
     bool move(vector<int> from, vector<int> to);
-    // bool moveForComputer(vector<int> start, vector<int> end);
-    // bool isCheck();
-    // bool isCheckmate();
-    // bool isStalemate();
     void toggleTurn();
-    // Colour getCheckedPlayer();
     friend ostream &operator<<(ostream &out, const Board &b);
-    // void resign();
     bool removePiece(vector<int> coord);
     void placeBoardPiece(int r, int c, char p, bool team);
     void clearBoard();
-    // void setPiece(int row, int col, Piece *p);
-    // void detachPiece(int row, int col);
-    // void deletePiece(int row, int col);
-    // Piece *getPiece(int row, int col);
+
     vector<Piece*> getAllWhitePieces();
     vector<Piece*> getAllBlackPieces();
     vector<Piece*> getAllKingPieces();
     vector<Piece*> getAllPieces();
-    // bool promote(int row, int col , char type);
 };
 
 #endif 

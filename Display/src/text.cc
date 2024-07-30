@@ -1,16 +1,6 @@
 #include "./../include/text.h"
 #include <iostream>
 
-// Text::Text(): boardDisplay{gridSize, std::vector<char>(gridSize, ' ')} {
-//     std::cout << "I love Chigga" << std::endl;
-//     for (int i = 0; i < gridSize; ++i) {
-//         for (int j = 0; j < gridSize; ++j) {
-//             if ((i + j) % 2 == 0) {
-//                 boardDisplay[i][j] = '_';
-//             }
-//         }
-//     }
-// }
 
 Text::Text() {
     boardDisplay.resize(gridSize, std::vector<char>(gridSize, ' '));

@@ -1,7 +1,7 @@
 #ifndef __OBSERVER_H__
 #define __OBSERVER_H__
 
-class Tile; // fwd decl
+class Tile; 
 
 class Observer {
   public:

@@ -8,6 +8,7 @@ void Level2::turn() {
     std::vector<std::vector<int>> checkingMoves;
     std::vector<std::vector<int>> otherMoves;
 
+    //get all legal moves
     for (int i = 0; i < 8; ++i) {
         for (int j = 0; j < 8; ++j) {
             Piece* piece = board->getTile(i, j).getPiece();
@@ -15,20 +16,29 @@ void Level2::turn() {
                 auto pieceMoves = piece->fetchAllMoves();
                 for (const auto& move : pieceMoves) {
                     if (game->isValidMove(i, j, move[0], move[1])) {
+
+                        //get a temporary board to check future moves
                         std::vector<std::vector<char>> textdisplay = game->printTable();
                         char fillChar = textdisplay[i][j];
                         textdisplay[move[0]][move[1]] = fillChar;
                         textdisplay[i][j] = ' ';
 
+                        //we cant move into check
                         if (game->isKingInCheck(textdisplay, team == Team::W)) {
                             continue;
                         }
 
+
+                        //if we can capture a piece, that is prio 1
                         if (board->getTile(move[0], move[1]).getPiece() != nullptr) {
                             capturingMoves.push_back({i, j, move[0], move[1]});
-                        } else if (game->isCheck()) {
+                        } 
+                        //next would be to put the enemy in check
+                        else if (game->isCheck()) {
                             checkingMoves.push_back({i, j, move[0], move[1]});
-                        } else {
+                        } 
+                        //then would be any other legal move
+                        else {
                             otherMoves.push_back({i, j, move[0], move[1]});
                         }
 

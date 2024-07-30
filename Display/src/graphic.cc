@@ -33,7 +33,7 @@ void Graphic::notify(Tile &tile) {
     int xaxis = 50 + (tile.getCol()+1) * blockSize;
     int yaxis = 50 + (tile.getRow()) * blockSize;
     char ch = drawChar(tile);
-    if (ch == '_') { // black grid without a piece
+    if (ch == '_') { 
         w.fillRectangle(xaxis, yaxis, blockSize, blockSize, Xwindow::Black);
     }
     else if(ch == ' '){
@@ -46,8 +46,7 @@ void Graphic::notify(Tile &tile) {
             w.fillRectangle(xaxis, yaxis, blockSize, blockSize, Xwindow::Black);
             w.drawString(xaxis + blockSize/2, yaxis + blockSize/2, std::string(1,ch), Xwindow::White);
         }
-        // w.fillRectangle(xaxis, yaxis, blockSize, blockSize, Xwindow::White);
-        // w.drawString(xaxis + blockSize/2, yaxis + blockSize/2, std::string(1,ch));
+
     }
 }
 

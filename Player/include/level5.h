@@ -16,8 +16,8 @@ class Level5: public Player {
 
 
     int getVal(PieceType type);
-        bool isCapturable(int row, int col);
-    int evaluate(int r1, int c1, int r2, int c2);
+        bool isCapturable(std::vector<std::vector<char>>board2, int row, int col);
+    int evaluate(std::vector<std::vector<char>>board2, int r1, int c1, int r2, int c2);
     void turn() override;
 };
 

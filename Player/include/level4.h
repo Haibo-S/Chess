@@ -16,7 +16,7 @@ class Level4: public Player {
 
 
     int getVal(PieceType type);
-        bool isCapturable(int row, int col);
+        bool isCapturable(std::vector<std::vector<char>>board2, int row, int col);
 
     void turn() override;
 };

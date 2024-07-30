@@ -17,22 +17,6 @@
 using namespace std;
 
 int main(){
-    // Game g{};
-
-    // bool setUpFlag = true;
-    // std::string line;
-
-    // while(getline(std::cin, line)){
-    //     if(line == "setup") break;
-    // }
-    // std::cout << "Entered Setup Mode!" << std::endl;
-    // while(setUpFlag && getline(std::cin, line)){
-    //     setUpFlag = g.setUpHandler(line);
-    // }
-    // std::cout << "Setup Mode Complete! Entering the Game!" << std::endl;
-    // while(getline(std::cin, line)){
-    //     g.commandHandler(line);
-    // }
 
 
 
@@ -40,6 +24,8 @@ int main(){
     g.start();
 
     while(true){}
+
+
     return 0;
 }
 

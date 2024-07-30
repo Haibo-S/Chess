@@ -2,38 +2,47 @@
 #include <cstdlib>
 #include <ctime>
 
+// Assert if the position is capturable by the enemy
+bool Level5::isCapturable(std::vector<std::vector<char>>board2, int row, int col) {
 
-int Level5::evaluate(int r1, int c1, int r2, int c2){
-    Piece* p1 = board->getTile(r1,c1).getPiece();
-    Piece* p2 = board->getTile(r2,c2).getPiece();
+    bool isWhite = (team == Team::W);
+    
+    return game->isAttackedByPawn(board2, row, col, isWhite) ||
+           game->isAttackedByKnight(board2, row, col, isWhite) ||
+           game->isAttackedBySlidingPiece(board2, row, col, isWhite, {{1, 0}, {-1, 0}, {0, 1}, {0, -1}}, 'R', 'Q') ||
+           game->isAttackedBySlidingPiece(board2, row, col, isWhite, {{1, 1}, {-1, 1}, {1, -1}, {-1, -1}}, 'B', 'Q');
+}
 
-    int moveScore=0;
+// Evaluate which move is the best
+int Level5::evaluate(std::vector<std::vector<char>>board2, int r1, int c1, int r2, int c2) {
+    Piece* p1 = board->getTile(r1, c1).getPiece();
+    Piece* p2 = board->getTile(r2, c2).getPiece();
 
-    int moveValue = isCapturable(r2,c2) ? getVal(p1->getPieceType()) : 0;
+    int moveScore = 0;
+
+    
+
+    // Assign a weight to each move based on the number of points that can be gained/lost through the move
+    int moveValue = isCapturable(board2, r2, c2) ? getVal(p1->getPieceType()) : 0;
+    int saveValue = (isCapturable(game->printTable(),r1 , c1) && !isCapturable(board2,r2,c2)) ? getVal(p1->getPieceType()) : 0;
     int captureValue = (p2 != nullptr) ? getVal(p2->getPieceType()) : 0;
 
-    moveScore = captureValue - moveValue;
+    moveScore = captureValue - moveValue + saveValue;
 
     std::vector<std::vector<char>> textdisplay = game->printTable();
     char fillChar = textdisplay[r1][c1];
     textdisplay[r2][c2] = fillChar;
-    textdisplay[r1][c2] = ' ';
+    textdisplay[r1][c1] = ' ';
 
+    // Putting the king in a check position is the lowest possible score, so this will be an impossibility
     if (game->isKingInCheck(textdisplay, team == Team::W)) {
-        return -9999999; 
+        return -9999999;
     }
 
     return moveScore;
-
 }
-bool Level5::isCapturable(int row, int col){
-    std::vector<std::vector<char>> board2 = game->printTable();
-    return game->isAttackedByPawn(board2, row, col, false) ||
-           game->isAttackedByKnight(board2, row, col, false) ||
-           game->isAttackedBySlidingPiece(board2, row, col, false, {{1, 0}, {-1, 0}, {0, 1}, {0, -1}}, 'R', 'Q') ||
-           game->isAttackedBySlidingPiece(board2, row, col, false, {{1, 1}, {-1, 1}, {1, -1}, {-1, -1}}, 'B', 'Q');
 
-}
+// Get the value of each piece
 int Level5::getVal(PieceType type) {
     switch (type) {
         case PieceType::PAWN: return 1;
@@ -45,12 +54,10 @@ int Level5::getVal(PieceType type) {
         default: return 0;
     }
 }
+
 void Level5::turn() {
     std::vector<std::vector<char>> chardisplay = game->printTable();
-
     std::vector<std::pair<std::vector<int>, int>> moveList;
-
-
 
     for (int i = 0; i < 8; ++i) {
         for (int j = 0; j < 8; ++j) {
@@ -58,9 +65,8 @@ void Level5::turn() {
             if (piece && piece->getTeam() == team) {
                 auto pieceMoves = piece->fetchAllMoves();
                 for (const auto& move : pieceMoves) {
-                    if (game->isValidMove(i, j, move[0], move[1])) {
-
-                        // Tentative move
+                    if (game->simpleIsValidMove(i, j, move[0], move[1])) {
+                        // Temp board
                         std::vector<std::vector<char>> textdisplay = game->printTable();
                         char fillChar = textdisplay[i][j];
                         textdisplay[move[0]][move[1]] = fillChar;
@@ -70,16 +76,15 @@ void Level5::turn() {
                             continue;
                         }
 
-                        int moveValue = evaluate(i, j, move[0], move[1]);
+                        int moveValue = evaluate(textdisplay,i, j, move[0], move[1]);
                         moveList.push_back({{i, j, move[0], move[1]}, moveValue});
-
                     }
                 }
             }
         }
     }
 
-
+    // Sort the moves list by getting the "best move" in front
     for (size_t i = 0; i < moveList.size(); ++i) {
         for (size_t j = 0; j < moveList.size() - 1; ++j) {
             if (moveList[j].second < moveList[j + 1].second) {
@@ -90,14 +95,18 @@ void Level5::turn() {
 
     std::vector<std::pair<std::vector<int>, int>>* preferredMoves = &moveList;
 
-    
+    // Get the best move
+    for(auto i: *(preferredMoves)){
+        for(auto j:i.first){
+            std::cout<<j<<" ";
+        }
+        std::cout<<i.second<<std::endl;
+    }
     if (!preferredMoves->empty()) {
-        auto move = (*preferredMoves)[std::rand() % preferredMoves->size()].first;
+        auto move = (*preferredMoves)[0].first;
         std::string movecommand = "move " + std::string(1, 'a' + move[1]) + std::to_string(8 - move[0]) + " " +
                                   std::string(1, 'a' + move[3]) + std::to_string(8 - move[2]);
-        std::cout<<"Computer's turn: " + movecommand << std::endl;
+        std::cout << "Computer's turn: " + movecommand << std::endl;
         game->commandHandler(movecommand);
     }
-
-
 }

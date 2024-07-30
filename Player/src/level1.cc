@@ -5,6 +5,8 @@
 
 
 void Level1::turn() {
+
+    //get all legal moves
     std::vector<std::vector<int>> moves;
     for (int i = 0; i < 8; ++i) {
         for (int j = 0; j < 8; ++j) {
@@ -19,6 +21,8 @@ void Level1::turn() {
             }
         }
     }
+
+    //randomly select a move
     if (!moves.empty()) {
         auto move = moves[std::rand() % moves.size()];
 
