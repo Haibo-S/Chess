@@ -16,6 +16,9 @@ void Tile::removePiece(){
 }
 
 Piece* Tile::getPiece(){
+    if(p==nullptr){
+        return nullptr;
+    }
     return this->p;
 }
 void Tile::checkPlace(Piece *piece){
