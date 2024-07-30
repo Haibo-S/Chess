@@ -43,11 +43,11 @@ void Game::start() {
         curPlayer = whitePlayer;
         bool setUpFlag = true;
         std::string line;
-
-        // while(getline(std::cin, line)){
-        //     if(line == "setup") break;
-        // }
-        std::cout << "Entering Setup Mode! Enter 'default' for default setup" << std::endl;
+        std::cout<<"Enter 'setup' to setup the board"<<std::endl;
+        while(getline(std::cin, line)){
+            if(line == "setup") break;
+        }
+        std::cout << "Entered Setup Mode!" << std::endl;
         while(setUpFlag && getline(std::cin, line)){
             setUpFlag = setUpHandler(line);
         }
