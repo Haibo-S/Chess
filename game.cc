@@ -55,7 +55,9 @@ void Game::start() {
             setUpFlag = setUpHandler(line);
         }
         std::cout << "Setup Mode Complete! Entering the Game!" << std::endl;
-    
+        if (cur==Team::B){
+            curPlayer = blackPlayer;
+        }
     std::string command;
     while (true) {
 
