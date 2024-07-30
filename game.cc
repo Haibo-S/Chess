@@ -8,6 +8,25 @@ using namespace std;
 bool isEnpassantMove = false;
 bool isCassleMove = false;
 
+std::string pieceTypeToString(PieceType pieceType) {
+    if (pieceType == PieceType::PAWN) {
+        return "Pawn";
+    } else if (pieceType == PieceType::KNIGHT) {
+        return "Knight";
+    } else if (pieceType == PieceType::BISHOP) {
+        return "Bishop";
+    } else if (pieceType == PieceType::ROOK) {
+        return "Rook";
+    } else if (pieceType == PieceType::QUEEN) {
+        return "Queen";
+    } else if (pieceType == PieceType::KING) {
+        return "King";
+    } else if (pieceType == PieceType::NONE) {
+        return "None";
+    } else {
+        return "Unknown";
+    }
+}
 void Game::start() {
     std::string command;
     while (true) {
@@ -153,7 +172,7 @@ void Game::moveCommand(const std::string &command) {
             exit(0);
             }  
             else{
-                std::cout << (cur == Team::B ? "Black" : "White") << " is in check!" << std::endl;
+                std::cout << (cur == Team::W ? "Black" : "White") << " is in check!" << std::endl;
 
             }
 
@@ -202,7 +221,7 @@ void Game::moveCommand(const std::string &command) {
                 exit(0);
                 }  
                 else{
-                    std::cout << (cur == Team::B ? "Black" : "White") << " is in check!" << std::endl;
+                    std::cout << (cur == Team::W ? "Black" : "White") << " is in check!" << std::endl;
 
                 }
 
@@ -239,20 +258,22 @@ bool Game::isValidMove(int r1, int c1, int r2, int c2) {
         return false;
     }
 
-    std::vector<std::vector<int>> validMoves = piece->fetchAllMoves();
 
     // for(auto& move: validMoves){
     //     cout << move[0] << " " << move[1] << endl;
     // }
 
-    for (auto& move : validMoves) {
+    for (auto& move : piece->fetchAllMoves()) {
         if (move[0] == r2 && move[1] == c2) {
-
+            std::cout<<"moving"<<std::endl;
             if (piece->getPieceType() == PieceType::PAWN) {
+                std::cout<<"pawn"<<std::endl;
                 Pawn* pawn = dynamic_cast<Pawn*>(piece);
 
                 //check that nothing is blocking the path
                 if (c1 == c2) {
+                    std::cout<<"here"<<std::endl;
+
                     if (endTile.getPiece() != nullptr) {
                         return false;
                     }
@@ -400,9 +421,12 @@ bool Game::isValidMove(int r1, int c1, int r2, int c2) {
 
                 }
             }
-            if (isPathObstructed(r1, c1, r2, c2)) {
+            
+            if (piece->getPieceType() == PieceType::PAWN || piece->getPieceType() == PieceType::ROOK || piece->getPieceType() == PieceType::BISHOP || piece->getPieceType() == PieceType::QUEEN) {
+                if (isPathObstructed(r1, c1, r2, c2)) {
                     return false;
                 }
+            } 
             Piece* capturedPiece = endTile.getPiece();
             startTile.checkRemove();
             endTile.checkPlace(piece);
@@ -416,12 +440,15 @@ bool Game::isValidMove(int r1, int c1, int r2, int c2) {
             if (capturedPiece) {
                 endTile.checkPlace(capturedPiece);
             }
-
-            return !kingInCheck;
+            if(kingInCheck){
+                return false;
+            }
+            
 
             piece->setHasMovedToTrue();
             return true;
         }      
+
     }
 
     return false;
@@ -528,8 +555,7 @@ bool Game::isCheckmate() {
                         }
 
                         if (!kingInCheck) {
-                           // switchTurn();
-                                std::cout<<"returning "<<printTeam(cur)<<std::endl;
+                            switchTurn();
 
                             return false;
                         }
@@ -621,7 +647,7 @@ bool Game::checkCheck() {
                 for (const auto& move : moves) {
                     if (move[0] == kingRow && move[1] == kingCol) {
                         // Check if the path is obstructed for pieces that cannot jump
-                        if (piece->getPieceType() == PieceType::ROOK || piece->getPieceType() == PieceType::BISHOP || piece->getPieceType() == PieceType::QUEEN) {
+                        if (piece->getPieceType() == PieceType::PAWN||piece->getPieceType() == PieceType::ROOK || piece->getPieceType() == PieceType::BISHOP || piece->getPieceType() == PieceType::QUEEN) {
                             if (!isPathObstructed(i, j, kingRow, kingCol)) {
                                 return true;
                             }
