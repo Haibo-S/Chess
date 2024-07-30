@@ -19,7 +19,7 @@ std::vector<std::vector<int>> King::fetchAllMoves() {
     // Possible moves for a king
     std::vector<std::pair<int, int>> moves = {
         {1, 0}, {-1, 0}, {0, 1}, {0, -1},
-        {1, 1}, {1, -1}, {-1, 1}, {-1, -1}
+        {1, 1}, {1, -1}, {-1, 1}, {-1, -1}, {0, 2}, {0, -2}
     };
 
     for (const auto& move : moves) {

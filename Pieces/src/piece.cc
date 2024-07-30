@@ -48,7 +48,9 @@ bool Piece::getHasMoved(){
 void Piece::setHasMovedToTrue(){
     hasMoved = true;
 }
-
+void Piece::setHasMovedToFalse(){
+    hasMoved = false;
+}
 // bool Piece::checkAttackOnEnemyKing() {
 //     auto positionEnemyKing = locateEnemyKing();
 //     auto allMoves = fetchAllMoves();

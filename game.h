@@ -20,6 +20,7 @@ class Game {
     Tile* getKing();
     void switchTurn();
     bool isValidMove(int r1, int c1, int r2, int c2);
+    bool checkValidMove(int r1, int c1, int r2, int c2);
     bool isCheck();
 
     bool isCheckmate();

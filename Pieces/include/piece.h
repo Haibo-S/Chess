@@ -45,7 +45,7 @@ class Piece {
 
     bool getHasMoved();
     void setHasMovedToTrue();
-
+    void setHasMovedToFalse();
 };
 
 #endif 
