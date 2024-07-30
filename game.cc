@@ -250,8 +250,14 @@ void Game::moveCommand(const std::string &command) {
             }
             if (isCheck()) {
                 std::cout << (cur == Team::W ? "Black" : "White") << " is in check!" << std::endl;
+                
 
                 vector<vector<int>> res = resolveCheckMoves();
+
+                cout << "Moves that resolve checks: " << endl;
+                for(int i = 0; i < res.size(); i++){
+                    cout << res[i][0] << " " << res[i][1] << " " << res[i][2] << " " << res[i][3] << endl;
+                }
 
                 if (res.size() == 0) {
                     std::cout << "Checkmate! " << (cur == Team::W ? "White" : "Black") << " wins!" << std::endl;
@@ -603,8 +609,10 @@ vector<vector<int>> Game::resolveCheckMoves(){
     vector<vector<int>> result;
 
     vector<vector<char>> tempBoard = printTable();
+    vector<vector<char>> tempBoard2 = tempBoard;
     bool teamFlag = cur == Team::W ? false : true;
 
+    
     for(int i=0; i<8; i++){
         for(int j=0; j<8; j++){
             Piece* temp = board.getTile(i,j).getPiece();
@@ -616,13 +624,24 @@ vector<vector<int>> Game::resolveCheckMoves(){
                         tempBoard[move[0]][move[1]] = fillChar;
                         tempBoard[i][j] = ' ';
 
+                        
 
+                        // if(i == 0 && j == 5 && move[0] == 1 && move[1] == 4){
+                        //     for(int i = 0; i < 8; i++){
+                        //         for(int j = 0; j < 8; j++){
+                        //             cout << tempBoard[i][j] << " ";
+                        //         }
+                        //         cout << endl;
+                        //     }
+                        //     cout << "Is black king in check? " << (isKingInCheck(tempBoard, teamFlag) ? "Yes" : "No") << endl;
+                        //     while(true){}
+                        // }
+                        
                         if(!isKingInCheck(tempBoard, teamFlag)){
                             result.push_back({i, j, move[0], move[1]});
                         }
                         
-                        tempBoard[move[0]][move[1]] = ' ';
-                        tempBoard[i][j] = fillChar;
+                        tempBoard = tempBoard2;
 
                         
                     }
@@ -638,7 +657,9 @@ vector<vector<int>> Game::resolveCheckMoves(){
 
 vector<vector<int>> Game::allPossibleMoves(){
     vector<vector<int>> result;
-    textdisplay = printTable();
+
+    vector<vector<char>> tempBoard = printTable();
+    vector<vector<char>> tempBoard2 = tempBoard;
 
     for(int i=0; i<8; i++){
         for(int j=0; j<8; j++){
@@ -647,17 +668,16 @@ vector<vector<int>> Game::allPossibleMoves(){
                 for(auto move: temp->fetchAllMoves()){
                     if(simpleIsValidMove(i,j,move[0],move[1])){
 
-                        char fillChar = textdisplay[i][j];
-                        textdisplay[move[0]][move[1]] = fillChar;
-                        textdisplay[i][j] = ' ';
+                        char fillChar = tempBoard[i][j];
+                        tempBoard[move[0]][move[1]] = fillChar;
+                        tempBoard[i][j] = ' ';
 
 
-                        if(!isKingInCheck(textdisplay, temp->getTeam() == Team::W)){
+                        if(!isKingInCheck(tempBoard, temp->getTeam() == Team::W)){
                             result.push_back({i, j, move[0], move[1]});
                         }
                         
-                        textdisplay[move[0]][move[1]] = ' ';
-                        textdisplay[i][j] = fillChar;
+                        tempBoard = tempBoard2;
                         
                     }
                 }
