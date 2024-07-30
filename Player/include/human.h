@@ -6,9 +6,9 @@
 
 class Human: public Player {
   public:
-    Human(Team tc, Board *b, bool t);
+    Human(Team tc, Board *b, Game *g, bool t) : Player(tc, b, g, t) {};
     void turn() override;
-    // void resign() override;
+    void resign();
 };
 
 #endif

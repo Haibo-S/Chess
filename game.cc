@@ -8,12 +8,55 @@ using namespace std;
 bool isEnpassantMove = false;
 bool isCassleMove = false;
 
+Game::~Game(){
+            delete whitePlayer;
+            if(blackPlayer) delete blackPlayer;
+}
+
+
 void Game::start() {
+
+    std::string playerType;
+    std::cout << "Enter 'human' 'level1' 'level2' 'level3' or 'level4' for the black player: ";
+    std::cin >> playerType;
+    whitePlayer = new Human(Team::W, &board, this, true);
+    if (playerType == "human") {
+        blackPlayer = new Human(Team::B, &board, this, false);
+    } 
+    else if (playerType == "level1") {
+        blackPlayer = new Level1(Team::B, &board, this, false); 
+    } 
+    else if (playerType == "level2") {
+        blackPlayer = new Level2(Team::B, &board, this, false); 
+    } 
+    else if (playerType == "level3") {
+        blackPlayer = new Level3(Team::B, &board, this, false); 
+    } 
+    else if (playerType == "level4") {
+        blackPlayer = new Level4(Team::B, &board, this, false); 
+    } 
+    else {
+        std::cout << "Invalid player type. Defaulting to Level1 computer." << std::endl;
+        blackPlayer = new Level1(Team::B, &board, this, false);
+    }
+       
+        curPlayer = whitePlayer;
+        bool setUpFlag = true;
+        std::string line;
+
+        // while(getline(std::cin, line)){
+        //     if(line == "setup") break;
+        // }
+        std::cout << "Entering Setup Mode! Enter 'default' for default setup" << std::endl;
+        while(setUpFlag && getline(std::cin, line)){
+            setUpFlag = setUpHandler(line);
+        }
+        std::cout << "Setup Mode Complete! Entering the Game!" << std::endl;
+    
     std::string command;
     while (true) {
         std::cout << (cur == Team::W ? "White's" : "Black's") << " turn. Enter command: ";
-        std::getline(std::cin, command);
-        commandHandler(command);
+        curPlayer->turn();
     }
 }
 
@@ -287,6 +330,7 @@ void Game::moveCommand(const std::string &command) {
 
 void Game::switchTurn() {
     cur = (cur == Team::W) ? Team::B : Team::W;
+    curPlayer = (curPlayer == whitePlayer) ? blackPlayer : whitePlayer;
 }
 
 bool Game::simpleIsValidMove(int r1, int c1, int r2, int c2) {

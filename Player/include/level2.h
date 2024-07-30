@@ -3,10 +3,11 @@
 
 #include <vector>
 #include "./player.h"
+#include "./../../game.h"
 
 class Level2: public Player {
   public:
-    Level2(Team tc, Board *b, bool t);
+    Level2(Team tc, Board *b, Game *g, bool t) : Player(tc, b, g, t) {};
     void turn() override;
 };
 

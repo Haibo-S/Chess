@@ -4,16 +4,18 @@
 #include <vector>
 #include "./../../Board/include/board.h"
 
+class Game;  // Forward declaration
+
 class Player {
-  protected:
+protected:
     Team team;
-    Board *b;
-    bool t;
-  public:
-    Player(Team tc, Board *b, bool t);
+    Board *board;
+    Game *game;
+    bool turnActive;
+public:
+    Player(Team tc, Board *b, Game *g, bool t);
     virtual ~Player();
     virtual void turn() = 0;
-    // virtual void resign() = 0;
     bool getTurn();
     Team getTeam();
     void setTeam(Team tc);
