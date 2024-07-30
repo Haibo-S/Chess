@@ -31,7 +31,8 @@ class Tile : public Subject{
 
         int getRow();
         int getCol();
-
+        void checkPlace(Piece *piece);
+        void checkRemove();
         Colour getColour();
         void setColour(Colour c);
 

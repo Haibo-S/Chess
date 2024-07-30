@@ -1,0 +1,9 @@
+setup
+default
+done
+move e2 e4
+move f7 f5
+move d1 h5
+move a7 a5
+move g7 g6 
+quit

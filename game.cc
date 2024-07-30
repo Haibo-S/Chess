@@ -345,6 +345,8 @@ bool Game::simpleIsValidMove(int r1, int c1, int r2, int c2) {
 bool Game::isValidMove(int r1, int c1, int r2, int c2) {
     Tile& startTile = board.getTile(r1, c1);
     Tile& endTile = board.getTile(r2, c2);
+        Tile& cassleTileR = board.getTile(r1,c1+1);
+    Tile& cassleTileL = board.getTile(r1,c1-1);
     Piece* piece = startTile.getPiece();
 
     // std::cout << printTeam(piece->getTeam()) << " " << printTeam(cur) << std::endl;
@@ -491,11 +493,32 @@ bool Game::isValidMove(int r1, int c1, int r2, int c2) {
                 cout << "Inside Cassle" << endl;
                 if(piece->getHasMoved()) return false;
                 textdisplay = printTable();
+                std::vector<std::vector<char>> textdisplay2 = textdisplay;
                 if(isKingInCheck(textdisplay, cur == Team::W)) return false;
                 if(c2 == c1 + 2){
                     if(board.getTile(r1, c1 + 3).getPiece() != nullptr && board.getTile(r1, c1 + 3).getPieceType() == PieceType::ROOK \
                     && !board.getTile(r1, c1 + 3).getPiece()->getHasMoved() \
                     && board.getTile(r1, c1 + 1).getPiece() == nullptr && board.getTile(r1, c1 + 2).getPiece() == nullptr){
+
+                        Piece* capturedPiece = endTile.getPiece();
+                        startTile.checkRemove();
+                        cassleTileR.checkPlace(piece);
+                        // Check if the king is in check after the move
+                        textdisplay = printTable();
+                        bool kingInCheck = isKingInCheck(textdisplay, cur == Team::W);
+
+                        // Undo the move
+                        cassleTileR.checkRemove();
+                        startTile.checkPlace(piece);
+                        if (capturedPiece) {
+                            cassleTileR.checkPlace(capturedPiece);
+                        }
+                        textdisplay = printTable();
+                        if(kingInCheck){
+                            return false;
+                        }
+
+
                         isCassleMove = true;
                         piece->setHasMovedToTrue();
                         board.getTile(r1, c1 + 3).getPiece()->setHasMovedToTrue();
@@ -507,6 +530,26 @@ bool Game::isValidMove(int r1, int c1, int r2, int c2) {
                     if(board.getTile(r1, c1 - 4).getPiece() != nullptr && board.getTile(r1, c1 - 4).getPieceType() == PieceType::ROOK \
                     && !board.getTile(r1, c1 - 4).getPiece()->getHasMoved() \
                     && board.getTile(r1, c1 - 1).getPiece() == nullptr && board.getTile(r1, c1 - 2).getPiece() == nullptr && board.getTile(r1, c1 - 3).getPiece() == nullptr){
+                        
+                        Piece* capturedPiece = endTile.getPiece();
+                        startTile.checkRemove();
+                        cassleTileL.checkPlace(piece);
+                        textdisplay = printTable();
+                        // Check if the king is in check after the move
+                        bool kingInCheck = isKingInCheck(textdisplay, cur == Team::W);
+
+                        // Undo the move
+                        cassleTileL.checkRemove();
+                        startTile.checkPlace(piece);
+                        if (capturedPiece) {
+                            cassleTileL.checkPlace(capturedPiece);
+                        }
+                        textdisplay = printTable();
+                        if(kingInCheck){
+                            return false;
+                        }
+
+                        
                         isCassleMove = true;
                         piece->setHasMovedToTrue();
                         board.getTile(r1, c1 - 4).getPiece()->setHasMovedToTrue();
