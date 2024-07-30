@@ -8,7 +8,7 @@ class Human: public Player {
   public:
     Human(Team tc, Board *b, bool t);
     void turn() override;
-    // void resign() override;
+    void resign();
 };
 
 #endif

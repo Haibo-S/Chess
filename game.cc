@@ -8,6 +8,12 @@ using namespace std;
 bool isEnpassantMove = false;
 bool isCassleMove = false;
 
+Game::~Game(){
+            delete whitePlayer;
+            if(blackPlayer) delete blackPlayer;
+}
+
+
 std::string pieceTypeToString(PieceType pieceType) {
     if (pieceType == PieceType::PAWN) {
         return "Pawn";
@@ -28,9 +34,48 @@ std::string pieceTypeToString(PieceType pieceType) {
     }
 }
 void Game::start() {
+
+    std::string playerType;
+    std::cout << "Enter 'human' 'level1' 'level2' 'level3' or 'level4' for the black player: ";
+    std::cin >> playerType;
+
+    if (playerType == "human") {
+        blackPlayer = new Human(Team::B, &board, false);
+    } 
+    else if (playerType == "level1") {
+        blackPlayer = new Level1(Team::B, &board, false); 
+    } 
+    else if (playerType == "level2") {
+        blackPlayer = new Level2(Team::B, &board, false); 
+    } 
+    else if (playerType == "level3") {
+        blackPlayer = new Level3(Team::B, &board, false); 
+    } 
+    else if (playerType == "level4") {
+        blackPlayer = new Level4(Team::B, &board, false); 
+    } 
+    else {
+        std::cerr << "Invalid player type. Defaulting to Level1 computer." << std::endl;
+        blackPlayer = new Level1(Team::B, &board, false);
+    }
+        bool setUpFlag = true;
+        std::string line;
+
+        while(getline(std::cin, line)){
+            if(line == "setup") break;
+        }
+        std::cout << "Entered Setup Mode!" << std::endl;
+        while(setUpFlag && getline(std::cin, line)){
+            setUpFlag = setUpHandler(line);
+        }
+        std::cout << "Setup Mode Complete! Entering the Game!" << std::endl;
+
     std::string command;
     while (true) {
         std::cout << (cur == Team::W ? "White's" : "Black's") << " turn. Enter command: ";
+
+
+
         std::getline(std::cin, command);
         commandHandler(command);
     }
@@ -41,6 +86,10 @@ string printTeam(const Team& t){
 }
 
 void Game::commandHandler(const std::string &command) {
+
+
+
+
     if (command == "exit") {
         std::cout << "Exiting game." << std::endl;
         exit(0);

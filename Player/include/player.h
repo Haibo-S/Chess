@@ -5,15 +5,14 @@
 #include "./../../Board/include/board.h"
 
 class Player {
-  protected:
+protected:
     Team team;
-    Board *b;
-    bool t;
-  public:
+    Board *board;
+    bool turnActive;
+public:
     Player(Team tc, Board *b, bool t);
     virtual ~Player();
     virtual void turn() = 0;
-    // virtual void resign() = 0;
     bool getTurn();
     Team getTeam();
     void setTeam(Team tc);
