@@ -1,6 +1,6 @@
 # Player/Makefile
 
-SRC = src/human.cc src/level1.cc src/level2.cc src/level3.cc src/level4.cc src/player.cc
+SRC = src/human.cc src/level1.cc src/level2.cc src/level3.cc src/level4.cc src/level5.cc src/player.cc
 OBJ = $(SRC:.cc=.o)
 CXXFLAGS = -Iinclude -g
 

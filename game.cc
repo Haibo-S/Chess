@@ -17,7 +17,7 @@ Game::~Game(){
 void Game::start() {
 
     std::string playerType;
-    std::cout << "Enter 'human' 'level1' 'level2' 'level3' or 'level4' for the black player: ";
+    std::cout << "Enter 'human' 'level1' 'level2' 'level3' 'level4' or 'level5' for the black player: ";
     std::cin >> playerType;
     whitePlayer = new Human(Team::W, &board, this, true);
     if (playerType == "human") {
@@ -34,6 +34,9 @@ void Game::start() {
     } 
     else if (playerType == "level4") {
         blackPlayer = new Level4(Team::B, &board, this, false); 
+    } 
+    else if (playerType == "level5") {
+        blackPlayer = new Level5(Team::B, &board, this, false); 
     } 
     else {
         std::cout << "Invalid player type. Defaulting to Level1 computer." << std::endl;
