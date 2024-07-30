@@ -27,6 +27,10 @@ class Game {
     Player* whitePlayer = nullptr;
     Player* blackPlayer = nullptr;
     Player* curPlayer;
+
+    double whiteScore = 0;
+    double blackScore = 0;
+
     void switchTurn();
 
     bool simpleIsValidMove(int r1, int c1, int r2, int c2);
@@ -36,7 +40,7 @@ class Game {
     bool isPathObstructed(int r1, int c1, int r2, int c2);
 
     
-    
+    void printScore();
 
     vector<vector<int>> resolveCheckMoves();
     vector<vector<int>> allPossibleMoves();
@@ -49,18 +53,18 @@ class Game {
         };
         ~Game();
     bool isValidMove(int r1, int c1, int r2, int c2);
-bool isCheck();
+    bool isCheck();
 
-bool isKingInCheck(const vector<vector<char>>& board, bool isWhite);
+    bool isKingInCheck(const vector<vector<char>>& board, bool isWhite);
     bool isValid(int x, int y);
     bool isAttackedByPawn(const vector<vector<char>>& board, int x, int y, bool isWhite);
     bool isAttackedByKnight(const vector<vector<char>>& board, int x, int y, bool isWhite);
     bool isAttackedBySlidingPiece(const vector<vector<char>>& board, int x, int y, bool isWhite, const vector<pair<int, int>>& directions, char piece1, char piece2);
     vector<vector<char>> printTable();
     
-        void start();
-        void commandHandler(const std::string &command);
-        bool setUpHandler(const std::string &command);
+    void start();
+    void commandHandler(const std::string &command);
+    bool setUpHandler(const std::string &command);
 };
 
 #endif

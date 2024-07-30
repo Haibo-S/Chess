@@ -2,6 +2,7 @@
 #include <iostream>
 #include <sstream>
 #include <vector>
+#include <thread>
 
 using namespace std;
 
@@ -76,6 +77,14 @@ void Game::start() {
     }
 }
 
+void Game::printScore(){
+    cout << endl;
+    cout << "Scores are the following: " << endl;
+    cout << "White Score is: " << whiteScore << endl;
+    cout << "Black Score is: " << blackScore << endl;
+    cout << endl;
+}
+
 string printTeam(const Team& t){
     return t == Team::W ? "W" : "B";
 }
@@ -83,13 +92,23 @@ string printTeam(const Team& t){
 void Game::commandHandler(const std::string &command) {
     if (command == "exit") {
         std::cout << "Exiting game." << std::endl;
+        printScore();
         exit(0);
     } else if (command.substr(0, 4) == "move") {
         moveCommand(command);
     } else if (command == "resign") {
         std::cout << (cur == Team::W ? "White" : "Black") << " resigns. "
                   << (cur == Team::W ? "Black" : "White") << " wins!" << std::endl;
-        exit(0);
+        if(cur == Team::W){
+            blackScore += 1;
+        }else{
+            whiteScore += 1;
+        }
+        printScore();
+        this_thread::sleep_for(std::chrono::seconds(5));
+        board.clearBoard();
+        board.initDefault();
+        return;
     }
     // Add more commands as needed
 }
@@ -240,7 +259,16 @@ void Game::moveCommand(const std::string &command) {
 
                 if (res.size() == 0) {
                     std::cout << "Checkmate! " << (cur == Team::W ? "White" : "Black") << " wins!" << std::endl;
-                    while(true) {}
+                    if(cur == Team::W){
+                        whiteScore += 1;
+                    }else{
+                        blackPlayer += 1;
+                    }
+                    printScore();
+                    this_thread::sleep_for(std::chrono::seconds(5));
+                    board.clearBoard();
+                    board.initDefault();
+                    return;
                 }
                  
             }
@@ -249,7 +277,13 @@ void Game::moveCommand(const std::string &command) {
             vector<vector<int>> allMoves = allPossibleMoves();
             if(allMoves.size() == 0){
                 std::cout << "StaleMate! This is a draw!" << std::endl;
-                while(true) {}
+                whiteScore += 0.5;
+                blackScore += 0.5;
+                printScore();
+                this_thread::sleep_for(std::chrono::seconds(5));
+                board.clearBoard();
+                board.initDefault();
+                return;
             }
 
         prevMove = {{r1, c1}, {r2, c2}};
@@ -313,14 +347,23 @@ void Game::moveCommand(const std::string &command) {
 
                 vector<vector<int>> res = resolveCheckMoves();
 
-                cout << "Moves that resolve checks: " << endl;
-                for(int i = 0; i < res.size(); i++){
-                    cout << res[i][0] << " " << res[i][1] << " " << res[i][2] << " " << res[i][3] << endl;
-                }
+                // cout << "Moves that resolve checks: " << endl;
+                // for(int i = 0; i < res.size(); i++){
+                //     cout << res[i][0] << " " << res[i][1] << " " << res[i][2] << " " << res[i][3] << endl;
+                // }
 
                 if (res.size() == 0) {
                     std::cout << "Checkmate! " << (cur == Team::W ? "White" : "Black") << " wins!" << std::endl;
-                    while(true) {}
+                    if(cur == Team::W){
+                        whiteScore += 1;
+                    }else{
+                        blackPlayer += 1;
+                    }
+                    printScore();
+                    this_thread::sleep_for(std::chrono::seconds(5));
+                    board.clearBoard();
+                    board.initDefault();
+                    return;
                 }
                  
             }
@@ -329,7 +372,13 @@ void Game::moveCommand(const std::string &command) {
             vector<vector<int>> allMoves = allPossibleMoves();
             if(allMoves.size() == 0){
                 std::cout << "StaleMate! This is a draw!" << std::endl;
-                while(true) {}
+                whiteScore += 0.5;
+                blackScore += 0.5;
+                printScore();
+                this_thread::sleep_for(std::chrono::seconds(5));
+                board.clearBoard();
+                board.initDefault();
+                return;
             }
 
 
