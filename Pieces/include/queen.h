@@ -8,7 +8,6 @@ class Queen : public Piece {
 public:
   // Queen(Team t, int row, int col, std::vector<Piece*>& pieces);
   Queen(Team t, int row, int col);
-  ~Queen() override;
   PieceType getPieceType() override;
   std::vector<std::vector<int>> fetchAllMoves() override;
   // std::vector<std::vector<int>> fetchAllCaptureMoves() override;

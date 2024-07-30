@@ -11,7 +11,6 @@ Pawn::Pawn(Team t, int row, int col)
 PieceType Pawn::getPieceType() {
     return PieceType::PAWN;
 }
-Pawn::~Pawn() {}
 
 std::vector<std::vector<int>> Pawn::fetchAllMoves() {
     std::vector<int> curPos = getPosition();

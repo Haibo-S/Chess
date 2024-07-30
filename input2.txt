@@ -1,0 +1,8 @@
+setup
+default
+done
+move e2 e4
+move f7 f5
+move f2 f4
+move b8 a6 
+move d1 h5

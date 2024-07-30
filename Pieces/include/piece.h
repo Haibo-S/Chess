@@ -17,7 +17,7 @@ class Piece {
   public:
     Piece(Team team, int row, int col): team{team}, row{row}, col{col}, hasMoved{false} {};
     // Piece(Team team, int row, int col, std::vector<Piece*>& pieces): team{team}, row{row}, col{col}, pieces{pieces} {};
-    virtual ~Piece() = 0;
+    virtual ~Piece() = default;
 
     Team getTeam();
     void setTeam(Team color);
@@ -31,9 +31,6 @@ class Piece {
 
     virtual PieceType getPieceType() = 0;
     virtual std::vector<std::vector<int>> fetchAllMoves() = 0;
-
-    // virtual bool getInCheck();
-    // virtual void setInCheck();
     // virtual std::vector<std::vector<int>> fetchAllCheckMoves();
     // virtual std::vector<std::vector<int>> fetchAllCaptureMoves() = 0;
     // virtual bool checkAttackOnEnemyKing();

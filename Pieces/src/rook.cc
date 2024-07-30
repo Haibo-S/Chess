@@ -6,7 +6,6 @@
 
 Rook::Rook(Team t, int row, int col)
     : Piece(t, row, col) {}
-Rook::~Rook() {}
 
 PieceType Rook::getPieceType() {
     return PieceType::ROOK;

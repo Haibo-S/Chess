@@ -8,25 +8,6 @@ using namespace std;
 bool isEnpassantMove = false;
 bool isCassleMove = false;
 
-std::string pieceTypeToString(PieceType pieceType) {
-    if (pieceType == PieceType::PAWN) {
-        return "Pawn";
-    } else if (pieceType == PieceType::KNIGHT) {
-        return "Knight";
-    } else if (pieceType == PieceType::BISHOP) {
-        return "Bishop";
-    } else if (pieceType == PieceType::ROOK) {
-        return "Rook";
-    } else if (pieceType == PieceType::QUEEN) {
-        return "Queen";
-    } else if (pieceType == PieceType::KING) {
-        return "King";
-    } else if (pieceType == PieceType::NONE) {
-        return "None";
-    } else {
-        return "Unknown";
-    }
-}
 void Game::start() {
     std::string command;
     while (true) {
@@ -37,7 +18,7 @@ void Game::start() {
 }
 
 string printTeam(const Team& t){
-    return t == Team::W ? "White" : "Black";
+    return t == Team::W ? "W" : "B";
 }
 
 void Game::commandHandler(const std::string &command) {
@@ -64,7 +45,37 @@ bool Game::setUpHandler(const std::string &command){
 
     if (tokens[0] == "done"){
 
-        // More to be done here!
+        // check for existence of two kings
+        int whiteKingCount = 0;
+        int blackKingCount = 0;
+        for(int i = 0; i < 8; i++){
+            for(int j = 0; j < 8; j++){
+                Piece* temp = board.getTile(i,j).getPiece();
+                if(temp != nullptr){
+                    if(temp->getPieceType() == PieceType::KING && temp->getTeam() == Team::W){
+                        whiteKingCount++;
+                    }
+                    if(temp->getPieceType() == PieceType::KING && temp->getTeam() == Team::B){
+                        blackKingCount++;
+                    }
+                }
+            }
+        }
+
+        if(whiteKingCount != 1 || blackKingCount != 1){
+            cout << "Must have 1 black and white king!" << endl;
+            return true;
+        }
+
+        // No king is in checked
+        textdisplay = printTable();
+        if(isKingInCheck(textdisplay, true) || isKingInCheck(textdisplay, false)){
+            cout << "King is in checked!" << endl;
+            return true;
+        }
+
+
+
         return false;
     }else if (tokens[0] == "+"){
         if(!(tokens[1] == "Q" || tokens[1] == "B" || tokens[1] == "R" \
@@ -163,26 +174,24 @@ void Game::moveCommand(const std::string &command) {
             return;
         }
 
-        // Just like before
-
-        if(isCheck()){
-
-          if (isCheckmate()) {
-            std::cout << "Checkmate! " << (cur == Team::W ? "White" : "Black") << " wins!" << std::endl;
-            exit(0);
-            }  
-            else{
+        if (isCheck()) {
                 std::cout << (cur == Team::W ? "Black" : "White") << " is in check!" << std::endl;
 
+                vector<vector<int>> res = resolveCheckMoves();
+
+                if (res.size() == 0) {
+                    std::cout << "Checkmate! " << (cur == Team::W ? "White" : "Black") << " wins!" << std::endl;
+                    while(true) {}
+                }
+                 
             }
-
-
-        }
-         else if (isStalemate()) {
-            std::cout << "Stalemate! It's a draw!" << std::endl;
-            exit(0);
-        } 
-
+            
+            // stalemate check
+            vector<vector<int>> allMoves = allPossibleMoves();
+            if(allMoves.size() == 0){
+                std::cout << "StaleMate! This is a draw!" << std::endl;
+                while(true) {}
+            }
 
         prevMove = {{r1, c1}, {r2, c2}};
         switchTurn();
@@ -209,28 +218,55 @@ void Game::moveCommand(const std::string &command) {
             return;
         }
         if (isValidMove(r1, c1, r2, c2)) {
+
+            // tentative move
+            textdisplay = printTable();
+            char fillChar = textdisplay[r1][c1];
+            textdisplay[r2][c2] = fillChar;
+            textdisplay[r1][c1] = ' ';
+
+
+            if(isKingInCheck(textdisplay, cur == Team::W)){
+                cout << "Invalid Move! Currently in Check!" << endl;
+                return;
+            }
+            
             board.move({r1, c1}, {r2, c2});
             if(isEnpassantMove){
                 board.removePiece({r1, c2});
                 isEnpassantMove = false;
             }
-            if(isCheck()){
-
-            if (isCheckmate()) {
-                std::cout << "Checkmate! " << (cur == Team::W ? "White" : "Black") << " wins!" << std::endl;
-                exit(0);
-                }  
-                else{
-                    std::cout << (cur == Team::W ? "Black" : "White") << " is in check!" << std::endl;
-
+            if(isCassleMove){
+                if(c2 == c1 + 2){
+                    Team t = board.getTile(r1, c1+3).getPiece()->getTeam();
+                    board.removePiece({r1, c1 + 3});
+                    board.placeBoardPiece(r1, c2-1, 'R', t == Team::W);
+                }else{
+                    Team t = board.getTile(r1, c1-4).getPiece()->getTeam();
+                    board.removePiece({r1, c1 - 4});
+                    board.placeBoardPiece(r1, c2+1, 'R', t == Team::W);
                 }
-
-
+                isCassleMove = false;
             }
-            else if (isStalemate()) {
-                std::cout << "Stalemate! It's a draw!" << std::endl;
-                exit(0);
+            if (isCheck()) {
+                std::cout << (cur == Team::W ? "Black" : "White") << " is in check!" << std::endl;
+
+                vector<vector<int>> res = resolveCheckMoves();
+
+                if (res.size() == 0) {
+                    std::cout << "Checkmate! " << (cur == Team::W ? "White" : "Black") << " wins!" << std::endl;
+                    while(true) {}
+                }
+                 
             }
+            
+            // stalemate check
+            vector<vector<int>> allMoves = allPossibleMoves();
+            if(allMoves.size() == 0){
+                std::cout << "StaleMate! This is a draw!" << std::endl;
+                while(true) {}
+            }
+
 
             prevMove = {{r1, c1}, {r2, c2}};
             switchTurn();
@@ -247,6 +283,59 @@ void Game::switchTurn() {
     cur = (cur == Team::W) ? Team::B : Team::W;
 }
 
+bool Game::simpleIsValidMove(int r1, int c1, int r2, int c2) {
+    Tile& startTile = board.getTile(r1, c1);
+    Tile& endTile = board.getTile(r2, c2);
+    Piece* piece = startTile.getPiece();
+
+    // if (!piece || piece->getTeam() != cur) {
+    //     return false;
+    // }
+
+    std::vector<std::vector<int>> validMoves = piece->fetchAllMoves();
+    Team tempCur = cur == Team::B ? Team::W : Team::B;
+    for (const auto& move : validMoves) {
+        if (move[0] == r2 && move[1] == c2) {
+
+            if (piece->getPieceType() == PieceType::PAWN) {
+                //check that nothing is blocking the path
+                if (c1 == c2) {
+                    if (endTile.getPiece() != nullptr) {
+                        return false;
+                    }
+                } 
+                else {
+                    // check there is a piece to take with diagonal move
+                    if (endTile.getPiece() == nullptr || endTile.getPiece()->getTeam() == startTile.getPiece()->getTeam()) {
+                        return false;
+                    }
+                }
+            }
+
+            if(endTile.getPiece() != nullptr && endTile.getPiece()->getTeam() == startTile.getPiece()->getTeam()){
+                return false;
+            }
+
+
+            if(piece->getPieceType() == PieceType::KING){
+                if(c2 == c1 + 2 || c2 == c1 - 2) return false;
+            }
+
+
+            return true;
+        }
+
+        if (piece->getPieceType() == PieceType::PAWN || piece->getPieceType() == PieceType::ROOK || piece->getPieceType() == PieceType::BISHOP || piece->getPieceType() == PieceType::QUEEN) {
+            if (isPathObstructed(r1, c1, r2, c2)) {
+                return false;
+            }
+        }        
+    }
+
+    return false;
+
+}
+
 bool Game::isValidMove(int r1, int c1, int r2, int c2) {
     Tile& startTile = board.getTile(r1, c1);
     Tile& endTile = board.getTile(r2, c2);
@@ -254,26 +343,24 @@ bool Game::isValidMove(int r1, int c1, int r2, int c2) {
 
     // std::cout << printTeam(piece->getTeam()) << " " << printTeam(cur) << std::endl;
 
-    if (!piece||piece->getPieceType()==PieceType::NONE || piece->getTeam() != cur) {
+    if (!piece || piece->getTeam() != cur) {
         return false;
     }
 
+    std::vector<std::vector<int>> validMoves = piece->fetchAllMoves();
 
     // for(auto& move: validMoves){
     //     cout << move[0] << " " << move[1] << endl;
     // }
 
-    for (auto& move : piece->fetchAllMoves()) {
+    for (auto& move : validMoves) {
         if (move[0] == r2 && move[1] == c2) {
-            std::cout<<"moving"<<std::endl;
+
             if (piece->getPieceType() == PieceType::PAWN) {
-                std::cout<<"pawn"<<std::endl;
                 Pawn* pawn = dynamic_cast<Pawn*>(piece);
 
                 //check that nothing is blocking the path
                 if (c1 == c2) {
-                    std::cout<<"here"<<std::endl;
-
                     if (endTile.getPiece() != nullptr) {
                         return false;
                     }
@@ -383,6 +470,7 @@ bool Game::isValidMove(int r1, int c1, int r2, int c2) {
             }
 
             if(endTile.getPiece() != nullptr && endTile.getPiece()->getTeam() == cur){
+                // cout << "Inside my if state" << endl;
                 return false;
             }
 
@@ -396,6 +484,8 @@ bool Game::isValidMove(int r1, int c1, int r2, int c2) {
             if(piece->getPieceType() == PieceType::KING && r1 == r2 && (c2 == c1 + 2 || c2 == c1 - 2)){
                 cout << "Inside Cassle" << endl;
                 if(piece->getHasMoved()) return false;
+                textdisplay = printTable();
+                if(isKingInCheck(textdisplay, cur == Team::W)) return false;
                 if(c2 == c1 + 2){
                     if(board.getTile(r1, c1 + 3).getPiece() != nullptr && board.getTile(r1, c1 + 3).getPieceType() == PieceType::ROOK \
                     && !board.getTile(r1, c1 + 3).getPiece()->getHasMoved() \
@@ -421,62 +511,32 @@ bool Game::isValidMove(int r1, int c1, int r2, int c2) {
 
                 }
             }
-            
-            if (piece->getPieceType() == PieceType::PAWN || piece->getPieceType() == PieceType::ROOK || piece->getPieceType() == PieceType::BISHOP || piece->getPieceType() == PieceType::QUEEN) {
-                if (isPathObstructed(r1, c1, r2, c2)) {
-                    return false;
-                }
-            } 
-            Piece* capturedPiece = endTile.getPiece();
-            startTile.checkRemove();
-            endTile.checkPlace(piece);
 
-            // Check if the king is in check after the move
-            bool kingInCheck = checkCheck();
-
-            // Undo the move
-            endTile.checkRemove();
-            startTile.checkPlace(piece);
-            if (capturedPiece) {
-                endTile.checkPlace(capturedPiece);
-            }
-            if(kingInCheck){
-                return false;
-            }
-            
+            // check the king wont move into check
+            // if (piece->getPieceType() == PieceType::KING) {
+            //     if (checkCheck(r1, c1, r2, c2)) {
+            //         return false;
+            //     }
+            // }
 
             piece->setHasMovedToTrue();
             return true;
-        }      
+        }
 
+        if (piece->getPieceType() == PieceType::PAWN || piece->getPieceType() == PieceType::ROOK || piece->getPieceType() == PieceType::BISHOP || piece->getPieceType() == PieceType::QUEEN) {
+            if (isPathObstructed(r1, c1, r2, c2)) {
+                return false;
+            }
+        }        
     }
 
     return false;
 }
 
-Tile* Game::getKing(){
-        Tile* kingTile = nullptr;
-
-
-    for(int i=0; i<8; i++){
-        for(int j=0; j<8; j++){
-            Piece* temp = board.getTile(i,j).getPiece();
-
-            if(temp != nullptr && temp->getPieceType() == PieceType::KING && temp->getTeam() == cur){
-                kingTile = &board.getTile(i,j);
-                break;
-            }
-        }
-        if(kingTile != nullptr){
-            break;
-        }
-    }
-    return kingTile;
-}
 bool Game::isCheck() {
 
     //get location of the king
-            Tile* kingTile = nullptr;
+    Tile* kingTile = nullptr;
 
 
     for(int i=0; i<8; i++){
@@ -492,166 +552,17 @@ bool Game::isCheck() {
             break;
         }
     }
+    // std::cout<<"king is at "<<kingTile->getRow()<<" "<<kingTile->getCol()<<std::endl;
 
-    //std::cout<<"king location "<<kingTile->getRow()<<" "<<kingTile->getCol()<<std::endl;
-        
     //get list of all possible enemy moves. If one of those moves can capture the king then the king is in check
     for(int i=0; i<8; i++){
         for(int j=0; j<8; j++){
             Piece* temp = board.getTile(i,j).getPiece();
             if(temp != nullptr && temp->getTeam() == cur){
                 for(auto move: temp->fetchAllMoves()){
-                    
-                    if(isValidMove(i,j,move[0],move[1])){
-                    if(move[0] == kingTile->getRow() && move[1] == kingTile->getCol()){
-                      //  kingTile->getPiece()->setInCheck();
-
-                    //   std::cout<<"is in check"<<std::endl;
-                    //   std::cout<<printTeam(cur)<<std::endl;
-                        return true;
-                    }
-                    }
-                }
-            }
-        }
-    }
-    return false;
-}
-
-
-
-bool Game::isCheckmate() {
-    if (!isCheck()) {
-        return false;
-    }
-
-    switchTurn();
-    std::cout<<printTeam(cur)<<std::endl;
-    // Now we need to check if there are any legal moves that can get the king out of check
-    for (int i = 0; i < 8; ++i) {
-        for (int j = 0; j < 8; ++j) {
-            Piece* piece = board.getTile(i, j).getPiece();
-            if (piece != nullptr && piece->getPieceType() != PieceType::NONE && piece->getTeam() == cur) {
-                std::vector<std::vector<int>> moves = piece->fetchAllMoves();
-                for (const auto& move : moves) {
-                    int targetRow = move[0];
-                    int targetCol = move[1];
-                    if (isValidMove(i, j, targetRow, targetCol)) {
-                        Tile& endTile = board.getTile(targetRow, targetCol);
-                        Tile& startTile = board.getTile(i, j);
-
-                        Piece* capturedPiece = endTile.getPiece();
-                        startTile.checkRemove();
-                        endTile.checkPlace(piece);
-
-                        // Check if the king is in check after the move
-                        bool kingInCheck = checkCheck();
-
-                        // Undo the move
-                        endTile.checkRemove();
-                        startTile.checkPlace(piece);
-                        if (capturedPiece) {
-                            endTile.checkPlace(capturedPiece);
-                        }
-
-                        if (!kingInCheck) {
-                            switchTurn();
-
-                            return false;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    switchTurn();
-    return true; // No legal moves found, it's checkmate
-}
-
-
-
-
-bool Game::isStalemate() {
-    if(isCheck()){
-        return false;
-    }
-
-    for(int i=0; i<8; i++){
-        for(int j=0; j<8; j++){
-            Piece* temp = board.getTile(i,j).getPiece();
-            if(temp != nullptr && temp->getTeam() != cur){
-                for(auto move: temp->fetchAllMoves()){
-                    int r2 = move[0];
-                    int c2 = move[1];
-                    if(isValidMove(i,j,r2,c2)){
-                    Piece* capturedPiece = board.getTile(r2,c2).getPiece();
-                    board.getTile(r2,c2).checkPlace(temp);
-
-
-
-                    bool isMoveValid = !isCheck();
-
-                    board.getTile(i,j).checkPlace(temp);
-                    board.getTile(r2,c2).checkPlace(capturedPiece);
-
-                    if(isMoveValid){
-                        return false;
-                    }
-                    }
-
-                }
-            }  
-
-        }
-    }    
-
-
-
-    return false;
-}
-
-
-bool Game::checkCheck() {
-
-    // Locate the king's position
-    Tile* kingTile = nullptr;
-    for (int i = 0; i < 8; ++i) {
-        for (int j = 0; j < 8; ++j) {
-            Piece* piece = board.getTile(i, j).getPiece();
-            if (piece && piece->getPieceType() == PieceType::KING && piece->getTeam() == cur) {
-                kingTile = &board.getTile(i, j);
-                break;
-            }
-        }
-        if (kingTile != nullptr) {
-            break;
-        }
-    }
-
-    if (kingTile == nullptr) {
-        return false; // No king found, should not happen
-    }
-
-
-    int kingRow = kingTile->getRow();
-    int kingCol = kingTile->getCol();
-
-    // Check if any opponent's piece can move to the king's position
-    Team opponent = (cur == Team::W) ? Team::B : Team::W;
-    for (int i = 0; i < 8; ++i) {
-        for (int j = 0; j < 8; ++j) {
-            Piece* piece = board.getTile(i, j).getPiece();
-            if (piece && piece->getTeam() == opponent) {
-                std::vector<std::vector<int>> moves = piece->fetchAllMoves();
-                for (const auto& move : moves) {
-                    if (move[0] == kingRow && move[1] == kingCol) {
-                        // Check if the path is obstructed for pieces that cannot jump
-                        if (piece->getPieceType() == PieceType::PAWN||piece->getPieceType() == PieceType::ROOK || piece->getPieceType() == PieceType::BISHOP || piece->getPieceType() == PieceType::QUEEN) {
-                            if (!isPathObstructed(i, j, kingRow, kingCol)) {
-                                return true;
-                            }
-                        } else {
+                    if(simpleIsValidMove(i,j,move[0],move[1])){
+                        if(move[0] == kingTile->getRow() && move[1] == kingTile->getCol()){
+                            // std::cout<<"Check!"<<std::endl;
                             return true;
                         }
                     }
@@ -659,9 +570,10 @@ bool Game::checkCheck() {
             }
         }
     }
-
     return false;
 }
+
+
 
 
 bool Game::isPathObstructed(int r1, int c1, int r2, int c2) {
@@ -687,4 +599,216 @@ bool Game::isPathObstructed(int r1, int c1, int r2, int c2) {
     return false;
 }
 
+vector<vector<int>> Game::resolveCheckMoves(){
+    vector<vector<int>> result;
 
+    vector<vector<char>> tempBoard = printTable();
+    bool teamFlag = cur == Team::W ? false : true;
+
+    for(int i=0; i<8; i++){
+        for(int j=0; j<8; j++){
+            Piece* temp = board.getTile(i,j).getPiece();
+            if(temp != nullptr && temp->getTeam() != cur){
+                for(auto move: temp->fetchAllMoves()){
+                    if(simpleIsValidMove(i,j,move[0],move[1])){
+                        
+                        char fillChar = tempBoard[i][j];
+                        tempBoard[move[0]][move[1]] = fillChar;
+                        tempBoard[i][j] = ' ';
+
+
+                        if(!isKingInCheck(tempBoard, teamFlag)){
+                            result.push_back({i, j, move[0], move[1]});
+                        }
+                        
+                        tempBoard[move[0]][move[1]] = ' ';
+                        tempBoard[i][j] = fillChar;
+
+                        
+                    }
+                }
+            }
+        }
+    }
+
+
+    return result;
+}
+
+
+vector<vector<int>> Game::allPossibleMoves(){
+    vector<vector<int>> result;
+    textdisplay = printTable();
+
+    for(int i=0; i<8; i++){
+        for(int j=0; j<8; j++){
+            Piece* temp = board.getTile(i,j).getPiece();
+            if(temp != nullptr && temp->getTeam() != cur){
+                for(auto move: temp->fetchAllMoves()){
+                    if(simpleIsValidMove(i,j,move[0],move[1])){
+
+                        char fillChar = textdisplay[i][j];
+                        textdisplay[move[0]][move[1]] = fillChar;
+                        textdisplay[i][j] = ' ';
+
+
+                        if(!isKingInCheck(textdisplay, temp->getTeam() == Team::W)){
+                            result.push_back({i, j, move[0], move[1]});
+                        }
+                        
+                        textdisplay[move[0]][move[1]] = ' ';
+                        textdisplay[i][j] = fillChar;
+                        
+                    }
+                }
+            }
+        }
+    }
+
+
+    return result;
+}
+
+
+vector<vector<char>> Game::printTable(){
+   vector<vector<char>> tempBoard = {
+        {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+        {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+        {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+        {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+        {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+        {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+        {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+        {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '}
+    };
+
+    for(int i = 0; i < 8; i++){
+        for(int j = 0; j < 8; j++){
+            Piece* temp = board.getTile(i,j).getPiece();
+            if(temp != nullptr){
+                if(temp->getPieceType() == PieceType::KING){
+                    if(temp->getTeam() == Team::W){
+                        tempBoard[i][j] = 'K';
+                    }else{
+                        tempBoard[i][j] = 'k';
+                    }
+                }else if(temp->getPieceType() == PieceType::QUEEN){
+                    if(temp->getTeam() == Team::W){
+                        tempBoard[i][j] = 'Q';
+                    }else{
+                        tempBoard[i][j] = 'q';
+                    }
+                }else if(temp->getPieceType() == PieceType::BISHOP){
+                    if(temp->getTeam() == Team::W){
+                        tempBoard[i][j] = 'B';
+                    }else{
+                        tempBoard[i][j] = 'b';
+                    }
+                }else if(temp->getPieceType() == PieceType::PAWN){
+                    if(temp->getTeam() == Team::W){
+                        tempBoard[i][j] = 'P';
+                    }else{
+                        tempBoard[i][j] = 'p';
+                    }
+                }else if(temp->getPieceType() == PieceType::KNIGHT){
+                    if(temp->getTeam() == Team::W){
+                        tempBoard[i][j] = 'N';
+                    }else{
+                        tempBoard[i][j] = 'n';
+                    }
+                }else if(temp->getPieceType() == PieceType::ROOK){
+                    if(temp->getTeam() == Team::W){
+                        tempBoard[i][j] = 'R';
+                    }else{
+                        tempBoard[i][j] = 'r';
+                    }
+                }
+            }
+        }
+    }
+
+    return tempBoard;
+
+}
+
+// Helper function to check if a given position is within the bounds of the board
+bool Game::isValid(int x, int y) {
+    return x >= 0 && x < 8 && y >= 0 && y < 8;
+}
+
+// Function to find the king's position on the board
+pair<int, int> findKing(const vector<vector<char>>& board, bool isWhite) {
+    char king = isWhite ? 'K' : 'k';
+    for (int i = 0; i < 8; ++i) {
+        for (int j = 0; j < 8; ++j) {
+            if (board[i][j] == king) {
+                return {i, j};
+            }
+        }
+    }
+    return {-1, -1}; // King not found, should not happen in a valid chess game
+}
+
+// Function to check if a position is attacked by a pawn
+bool Game::isAttackedByPawn(const vector<vector<char>>& board, int x, int y, bool isWhite) {
+    if (isWhite) {
+        return (isValid(x-1, y-1) && board[x-1][y-1] == 'p') ||
+               (isValid(x-1, y+1) && board[x-1][y+1] == 'p');
+    } else {
+        return (isValid(x+1, y-1) && board[x+1][y-1] == 'P') ||
+               (isValid(x+1, y+1) && board[x+1][y+1] == 'P');
+    }
+}
+
+// Function to check if a position is attacked by a knight
+bool Game::isAttackedByKnight(const vector<vector<char>>& board, int x, int y, bool isWhite) {
+    vector<pair<int, int>> knightMoves = {
+        {x+2, y+1}, {x+2, y-1}, {x-2, y+1}, {x-2, y-1},
+        {x+1, y+2}, {x+1, y-2}, {x-1, y+2}, {x-1, y-2}
+    };
+    char knight = isWhite ? 'n' : 'N';
+    for (auto move : knightMoves) {
+        if (isValid(move.first, move.second) && board[move.first][move.second] == knight) {
+            return true;
+        }
+    }
+    return false;
+}
+
+// Function to check if a position is attacked by a sliding piece (bishop, rook, or queen)
+bool Game::isAttackedBySlidingPiece(const vector<vector<char>>& board, int x, int y, bool isWhite, const vector<pair<int, int>>& directions, char piece1, char piece2) {
+    for (auto dir : directions) {
+        int dx = dir.first;
+        int dy = dir.second;
+        int nx = x + dx;
+        int ny = y + dy;
+        while (isValid(nx, ny)) {
+            if (board[nx][ny] != ' ') {
+                if ((board[nx][ny] == piece1 || board[nx][ny] == piece2)) {
+                    return true;
+                }
+                break;
+            }
+            nx += dx;
+            ny += dy;
+        }
+    }
+    return false;
+}
+
+// Main function to check if the king is in check
+bool Game::isKingInCheck(const vector<vector<char>>& board, bool isWhite) {
+    pair<int, int> kingPos = findKing(board, isWhite);
+    int kingX = kingPos.first;
+    int kingY = kingPos.second;
+
+    // Directions for rooks and queens
+    vector<pair<int, int>> rookDirections = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
+    // Directions for bishops and queens
+    vector<pair<int, int>> bishopDirections = {{1, 1}, {1, -1}, {-1, 1}, {-1, -1}};
+
+    return isAttackedByPawn(board, kingX, kingY, isWhite) ||
+           isAttackedByKnight(board, kingX, kingY, isWhite) ||
+           isAttackedBySlidingPiece(board, kingX, kingY, isWhite, rookDirections, isWhite ? 'r' : 'R', isWhite ? 'q' : 'Q') ||
+           isAttackedBySlidingPiece(board, kingX, kingY, isWhite, bishopDirections, isWhite ? 'b' : 'B', isWhite ? 'q' : 'Q');
+}

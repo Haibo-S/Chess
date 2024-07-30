@@ -6,7 +6,7 @@
 class Knight : public Piece {
 public:
     Knight(Team t, int row, int col);
-    ~Knight() override;
+    ~Knight() override = default;
     
     PieceType getPieceType() override;
     std::vector<std::vector<int>> fetchAllMoves() override;

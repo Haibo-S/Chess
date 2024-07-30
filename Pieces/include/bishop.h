@@ -8,7 +8,6 @@ class Bishop : public Piece {
 public:
   // Bishop(Team t, int row, int col, std::vector<Piece*>& pieces);
   Bishop(Team t, int row, int col);
-  ~Bishop() override;
   PieceType getPieceType() override;
   std::vector<std::vector<int>> fetchAllMoves() override;
   // std::vector<std::vector<int>> fetchAllCaptureMoves() override;

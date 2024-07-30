@@ -26,9 +26,6 @@ class Tile : public Subject{
         void placePiece(Piece *piece);
         void removePiece();
 
-        void checkPlace(Piece *piece);
-        void checkRemove();
-
         Piece* getPiece();
         PieceType getPieceType();
 

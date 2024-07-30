@@ -3,7 +3,6 @@
 
 Knight::Knight(Team t, int row, int col)
     : Piece(t, row, col) {}
-Knight::~Knight() {}
 
 PieceType Knight::getPieceType() {
     return PieceType::KNIGHT;

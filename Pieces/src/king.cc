@@ -5,8 +5,7 @@
 //     : Piece(t, row, col, pieces) {}
 
 King::King(Team t, int row, int col)
-    : Piece(t, row, col), inCheck{false} {}
-King::~King() {}
+    : Piece(t, row, col) {}
 
 PieceType King::getPieceType() {
     return PieceType::KING;
@@ -19,7 +18,7 @@ std::vector<std::vector<int>> King::fetchAllMoves() {
     // Possible moves for a king
     std::vector<std::pair<int, int>> moves = {
         {1, 0}, {-1, 0}, {0, 1}, {0, -1},
-        {1, 1}, {1, -1}, {-1, 1}, {-1, -1}
+        {1, 1}, {1, -1}, {-1, 1}, {-1, -1}, {0, 2}, {0, -2}
     };
 
     for (const auto& move : moves) {
@@ -80,9 +79,3 @@ std::vector<std::vector<int>> King::fetchAllMoves() {
 //     this->hasMoved = true;
 // }
 
-    // bool King::getInCheck(){
-    //     return inCheck;
-    // }
-    // void King::setInCheck(){
-    //     inCheck=!inCheck;
-    // }

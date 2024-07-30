@@ -18,6 +18,7 @@ using namespace std;
 
 int main(){
     Game g{};
+
     bool setUpFlag = true;
     std::string line;
 
@@ -32,7 +33,6 @@ int main(){
     while(getline(std::cin, line)){
         g.commandHandler(line);
     }
-
     while(true){}
     return 0;
 }

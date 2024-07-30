@@ -5,7 +5,6 @@
 #include "Pieces/include/piece.h"
 #include "Display/include/text.h"
 #include "Display/include/graphic.h"
-
 #include <iostream>
 #include <string>
 
@@ -17,18 +16,27 @@ class Game {
     Board board;
     Team cur;
     vector<vector<int>> prevMove;
-    Tile* getKing();
-    void switchTurn();
-    bool isValidMove(int r1, int c1, int r2, int c2);
-    bool isCheck();
+    vector<vector<char>> textdisplay;
 
-    bool isCheckmate();
-    bool isStalemate();
+    void switchTurn();
+
+    bool isValidMove(int r1, int c1, int r2, int c2);
+    bool simpleIsValidMove(int r1, int c1, int r2, int c2);
+
+    bool isCheck();
     void moveCommand(const std::string &command);
-    bool checkCheck();
     bool isPathObstructed(int r1, int c1, int r2, int c2);
-    bool isKinginCheck();
-    
+
+    vector<vector<char>> printTable();
+    bool isKingInCheck(const vector<vector<char>>& board, bool isWhite);
+    bool isValid(int x, int y);
+    bool isAttackedByPawn(const vector<vector<char>>& board, int x, int y, bool isWhite);
+    bool isAttackedByKnight(const vector<vector<char>>& board, int x, int y, bool isWhite);
+    bool isAttackedBySlidingPiece(const vector<vector<char>>& board, int x, int y, bool isWhite, const vector<pair<int, int>>& directions, char piece1, char piece2);
+
+    vector<vector<int>> resolveCheckMoves();
+    vector<vector<int>> allPossibleMoves();
+
     public:
 
         Game() : cur{Team::W}, board{500} {
@@ -41,3 +49,4 @@ class Game {
 };
 
 #endif
+

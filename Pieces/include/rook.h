@@ -10,7 +10,7 @@ public:
     // Rook(Team t, int row, int col);
     // Rook(Team t, int row, int col, std::vector<Piece*>& pieces);
     Rook(Team t, int row, int col);
-~Rook() override;
+
     PieceType getPieceType() override;
     std::vector<std::vector<int>> fetchAllMoves() override;
     // std::vector<std::vector<int>> fetchAllCaptureMoves() override;
