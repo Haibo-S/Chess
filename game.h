@@ -30,7 +30,7 @@ class Game {
 
     bool simpleIsValidMove(int r1, int c1, int r2, int c2);
 
-    bool isCheck();
+    
     void moveCommand(const std::string &command);
     bool isPathObstructed(int r1, int c1, int r2, int c2);
 
@@ -52,7 +52,7 @@ class Game {
         };
         ~Game();
     bool isValidMove(int r1, int c1, int r2, int c2);
-
+bool isCheck();
         void start();
         void commandHandler(const std::string &command);
         bool setUpHandler(const std::string &command);
