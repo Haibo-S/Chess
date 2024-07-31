@@ -11,6 +11,8 @@ bool isCassleMove = false;
 
 Game::~Game()
 {
+    printScore();
+
     delete whitePlayer;
     if (blackPlayer)
         delete blackPlayer;

@@ -20,12 +20,10 @@ int main(){
 
 
 
-    Game g{};
+    Game g;
     g.start();
-
-    while(true){}
-
-
+    
+    g.printScore();
     return 0;
 }
 

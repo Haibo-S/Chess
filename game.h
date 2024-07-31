@@ -37,7 +37,7 @@ class Game
     void moveCommand(const std::string &command);
     bool isPathObstructed(int r1, int c1, int r2, int c2);
 
-    void printScore();
+    
 
     vector<vector<int>> resolveCheckMoves();
     vector<vector<int>> allPossibleMoves();
@@ -51,7 +51,7 @@ public:
     bool isValidMove(int r1, int c1, int r2, int c2);
     bool isCheck();
     bool simpleIsValidMove(int r1, int c1, int r2, int c2);
-
+    void printScore();
     bool isKingInCheck(const vector<vector<char>> &board, bool isWhite);
     bool isValid(int x, int y);
     bool isAttackedByPawn(const vector<vector<char>> &board, int x, int y, bool isWhite);

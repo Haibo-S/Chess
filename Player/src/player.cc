@@ -1,4 +1,4 @@
-#include "player.h"
+#include "./../include/player.h"
 
 Player::Player(Team tc, Board *board, Game *g, bool turn) : team(tc), board(board), game(g), turnActive(turn) {}
 
