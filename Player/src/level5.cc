@@ -96,12 +96,7 @@ void Level5::turn() {
     std::vector<std::pair<std::vector<int>, int>>* preferredMoves = &moveList;
 
     // Get the best move
-    for(auto i: *(preferredMoves)){
-        for(auto j:i.first){
-            std::cout<<j<<" ";
-        }
-        std::cout<<i.second<<std::endl;
-    }
+
     if (!preferredMoves->empty()) {
         auto move = (*preferredMoves)[0].first;
         std::string movecommand = "move " + std::string(1, 'a' + move[1]) + std::to_string(8 - move[0]) + " " +

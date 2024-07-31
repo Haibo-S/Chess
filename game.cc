@@ -19,38 +19,78 @@ Game::~Game()
 void Game::start()
 {
 
+    
+    std::string player1;
+    std::string player2;
+    std::string command;
     std::string playerType;
-    std::cout << "Enter 'human' 'level1' 'level2' 'level3' 'level4' or 'level5' for the black player: ";
-    std::cin >> playerType;
-    whitePlayer = new Human(Team::W, &board, this, true);
-    if (playerType == "human")
+
+
+    while(command!="game"){
+        std::cout<<"Enter: game 'white-player' 'black-player' to start a new game. The parameters 'white-player' and 'black-player' can be either human or computer[1-5]"<<std::endl;
+
+        std::cin >> command >> player1 >> player2;
+    }
+
+    if(player1 == "human"){
+        whitePlayer = new Human(Team::W, &board, this, true);
+    }
+    else if (player1 == "computer1")
+    {
+        whitePlayer = new Level1(Team::W, &board, this, true);
+    }
+    else if (player1 == "computer2")
+    {
+        whitePlayer = new Level2(Team::W, &board, this, true);
+    }
+    else if (player1 == "computer3")
+    {
+        whitePlayer = new Level3(Team::W, &board, this, true);
+    }
+    else if (player1 == "computer4")
+    {
+        whitePlayer = new Level4(Team::W, &board, this, true);
+    }
+    else if (player1 == "computer5")
+    {
+        whitePlayer = new Level5(Team::W, &board, this, true);
+    }
+    else
+    {
+        std::cout << "Invalid player type. Defaulting to human." << std::endl;
+        blackPlayer = new Human(Team::W, &board, this, true);
+    }
+
+
+
+    if (player2 == "human")
     {
         blackPlayer = new Human(Team::B, &board, this, false);
     }
-    else if (playerType == "level1")
+    else if (player2 == "computer1")
     {
         blackPlayer = new Level1(Team::B, &board, this, false);
     }
-    else if (playerType == "level2")
+    else if (player2 == "computer2")
     {
         blackPlayer = new Level2(Team::B, &board, this, false);
     }
-    else if (playerType == "level3")
+    else if (player2 == "computer3")
     {
         blackPlayer = new Level3(Team::B, &board, this, false);
     }
-    else if (playerType == "level4")
+    else if (player2 == "computer4")
     {
         blackPlayer = new Level4(Team::B, &board, this, false);
     }
-    else if (playerType == "level5")
+    else if (player2 == "computer5")
     {
         blackPlayer = new Level5(Team::B, &board, this, false);
     }
     else
     {
-        std::cout << "Invalid player type. Defaulting to Level1 computer." << std::endl;
-        blackPlayer = new Level1(Team::B, &board, this, false);
+        std::cout << "Invalid player type. Defaulting to Human." << std::endl;
+        blackPlayer = new Human(Team::B, &board, this, false);
     }
 
     curPlayer = whitePlayer;
@@ -72,23 +112,26 @@ void Game::start()
     {
         curPlayer = blackPlayer;
     }
-    std::string command;
     while (true)
     {
 
-        if (playerType == "human")
-        {
-            std::cout << (cur == Team::W ? "White's" : "Black's") << " turn. Enter command: ";
+        if(cur==Team::W){
+            if(player1=="human"){
+                std::cout<<"White's turn. Enter command: ";
+            }
+            else{
+                std::cout << "Computer's move" << std::endl;
+            }
         }
-        if (curPlayer == whitePlayer && playerType != "human")
-        {
-            std::cout << "Your turn. Enter command: ";
+        if(cur==Team::B){
+            if(player2=="human"){
+                std::cout<<"Black's turn. Enter command: ";
+            }
+            else{
+                std::cout << "Computer's move" << std::endl;
+            }
         }
 
-        if (curPlayer == blackPlayer && playerType != "human")
-        {
-            std::cout << "Computer's move" << std::endl;
-        }
 
         curPlayer->turn();
     }
