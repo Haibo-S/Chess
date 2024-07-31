@@ -11,7 +11,6 @@ clean:
 	done
 	rm -f main main.o game.o
 
-# Link all object files to create the main executable
 main: main.o game.o Board/src/board.o Board/src/tile.o Board/src/subject.o Display/src/graphic.o Display/src/text.o Display/src/XWindow.o Pieces/src/bishop.o Pieces/src/king.o Pieces/src/knight.o Pieces/src/pawn.o Pieces/src/piece.o Pieces/src/queen.o Pieces/src/rook.o Player/src/human.o Player/src/level1.o Player/src/level2.o Player/src/level3.o Player/src/level4.o Player/src/player.o
 	g++ -o main main.o game.o Board/src/board.o Board/src/tile.o Board/src/subject.o Display/src/graphic.o Display/src/text.o Display/src/XWindow.o Pieces/src/bishop.o Pieces/src/king.o Pieces/src/knight.o Pieces/src/pawn.o Pieces/src/piece.o Pieces/src/queen.o Pieces/src/rook.o Player/src/human.o Player/src/level1.o Player/src/level2.o Player/src/level3.o Player/src/level4.o Player/src/level5.o Player/src/player.o -lX11
 
